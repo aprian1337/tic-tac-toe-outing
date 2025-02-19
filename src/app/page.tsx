@@ -1,101 +1,275 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useState, useEffect } from "react";
+import questionsData from "./questions.json";
+
+type Question = {
+  question: string;
+  options: string[];
+  correct: string;
+};
+
+type Category = {
+  name: string;
+  questions: Question[];
+};
+
+type QuestionsData = {
+  categories: Category[];
+};
+
+const TicTacToeQuiz: React.FC = () => {
+  const [board, setBoard] = useState<(string | null)[]>(Array(9).fill(null));
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [cellCategories, setCellCategories] = useState<string[]>(
+    Array(9).fill("")
+  );
+  const [currentPlayer, setCurrentPlayer] = useState<"O" | "X">("O");
+  const [selectedQuestion, setSelectedQuestion] = useState<
+    (Question & { category: string }) | null
+  >(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [feedback, setFeedback] = useState<string | null>(null);
+  const [timeLeft, setTimeLeft] = useState<number>(0);
+  const [scores, setScores] = useState<{ O: number; X: number }>({
+    O: 0,
+    X: 0,
+  });
+  const [isAnswering, setIsAnswering] = useState<boolean>(false);
+  const [isCheckAnswer, setIsCheckAnswer] = useState<boolean>(false);
+
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedDarkMode = localStorage.getItem("darkMode");
+      setDarkMode(storedDarkMode === "true");
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => {
+      localStorage.setItem("darkMode", String(!prev));
+      return !prev;
+    });
+  };
+
+  useEffect(() => {
+    const data = questionsData as QuestionsData;
+    setCategories(data.categories);
+    const randomCategories = Array(9)
+      .fill(null)
+      .map(() => {
+        const randomCategory =
+          data.categories[Math.floor(Math.random() * data.categories.length)];
+        return randomCategory.name;
+      });
+    setCellCategories(randomCategories);
+  }, []);
+
+  useEffect(() => {
+    if (timeLeft > 0) {
+      const timerId = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
+      return () => clearTimeout(timerId);
+    } else if (timeLeft === 0 && selectedQuestion) {
+      setFeedback("⏰ Time's up! Passing to the next team.");
+      setTimeout(() => resetTurn(), 1000);
+      setIsCheckAnswer(false);
+      setIsAnswering(false);
+    }
+  }, [timeLeft, selectedQuestion]);
+
+  const checkWinner = (board: (string | null)[]) => {
+    const winningCombinations = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+    for (let combination of winningCombinations) {
+      const [a, b, c] = combination;
+      if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+        return board[a];
+      }
+    }
+    return null;
+  };
+
+  const resetTurn = () => {
+    setFeedback(null);
+    setSelectedQuestion(null);
+    setSelectedIndex(null);
+    setCurrentPlayer(currentPlayer === "O" ? "X" : "O");
+  };
+
+  const handleCellClick = (index: number) => {
+    if (board[index] || isAnswering) return;
+    const categoryName = cellCategories[index];
+    const category = categories.find((cat) => cat.name === categoryName);
+    if (!category) return;
+
+    const availableQuestions = category.questions;
+    const randomQuestion =
+      availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+
+    setSelectedQuestion({ ...randomQuestion, category: categoryName });
+    setSelectedIndex(index);
+    setTimeLeft(60);
+    setIsAnswering(true);
+  };
+
+  const handleAnswer = (answer: string) => {
+    if (!selectedQuestion || selectedIndex === null) return;
+
+    setIsCheckAnswer(true);
+
+    if (answer === selectedQuestion.correct) {
+      const newBoard = [...board];
+      newBoard[selectedIndex] = currentPlayer;
+      setBoard(newBoard);
+      setFeedback("✅ Correct!");
+
+      const winner = checkWinner(newBoard);
+      if (winner) {
+        handleWin(winner as "O" | "X");
+      }
+    } else {
+      setFeedback("❌ Wrong!");
+    }
+
+    setTimeout(() => {
+      setIsCheckAnswer(false);
+      setIsAnswering(false);
+      resetTurn();
+    }, 1000);
+  };
+
+  const [winnerMessage, setWinnerMessage] = useState<string | null>(null);
+
+  const handleWin = (winner: "O" | "X") => {
+    setScores((prev) => ({ ...prev, [winner]: prev[winner] + 1 }));
+
+    if (scores[winner] + 1 === 2) {
+      setWinnerMessage(
+        `🏆 Team ${winner === "O" ? "A" : "B"} is the champion!`
+      );
+      setScores({ O: 0, X: 0 });
+      setBoard(Array(9).fill(null));
+      resetTurn();
+    } else {
+      setWinnerMessage(
+        `🎉 Team ${winner === "O" ? "A" : "B"} wins this round!`
+      );
+      setBoard(Array(9).fill(null));
+      resetTurn();
+    }
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div
+      className={`flex flex-col items-center p-5 min-h-screen transition-all duration-300 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-black"
+      }`}
+    >
+      <button
+        onClick={() => toggleDarkMode()}
+        className="absolute top-5 right-5 p-2 bg-gray-700 text-white rounded-lg"
+      >
+        {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      </button>
+      <h1 className="text-3xl font-bold">Tic Tac Toe Quiz</h1>
+      <div className="flex justify-between w-64 text-lg font-bold mt-3">
+        <span className="text-blue-500">Team A (O): {scores.O}</span>
+        <span className="text-red-500">Team B (X): {scores.X}</span>
+      </div>
+      <div className="border justify-center text-lg font-bold rounded-lg mt-5">
+        <h2
+          className={`p-2 px-10 font-bold ${
+            currentPlayer === "O" ? "text-blue-500" : "text-red-500"
+          }`}
+        >
+          Current Turn: {currentPlayer === "O" ? "Team A (O)" : "Team B (X)"}
+        </h2>
+      </div>
+      <div className="grid grid-cols-3 gap-4 mt-5">
+        {board.map((cell, index) => (
+          <button
+            key={index}
+            className={`w-24 h-24 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
+              darkMode
+                ? "border-gray-600 bg-gray-800"
+                : "border-gray-300 bg-white"
+            } ${selectedIndex === index ? "bg-green-500 text-white" : ""}`}
+            onClick={() => handleCellClick(index)}
+            disabled={!!cell || isAnswering}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <span>{cell || cellCategories[index]}</span>
+          </button>
+        ))}
+      </div>
+      {selectedQuestion && (
+        <div
+          className={`mt-5 p-5 border rounded-lg shadow-md w-96 animate-fade-in transition-all duration-300 
+    ${
+      darkMode
+        ? "border-gray-600 bg-gray-800 text-white"
+        : "border-gray-300 bg-white text-gray-800"
+    }`}
+        >
+          <h2 className="text-xl font-bold">{selectedQuestion.category}</h2>
+          <p className="whitespace-pre-wrap mt-2">
+            {selectedQuestion.question}
+          </p>
+          <div className="grid grid-cols-2 gap-2 mt-3">
+            {selectedQuestion.options.map((option) => (
+              <button
+                key={option}
+                className="p-2 rounded-lg transition-all duration-300
+            bg-blue-500 text-white hover:bg-blue-600"
+                onClick={() => handleAnswer(option)}
+                disabled={isCheckAnswer}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+          <div
+            className={`mt-3 text-lg font-bold ${
+              darkMode ? "text-red-400" : "text-red-700"
+            }`}
           >
-            Read our docs
-          </a>
+            Time left: {timeLeft} seconds
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      )}
+
+      {winnerMessage && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-5 rounded-lg shadow-lg text-center animate-fade-in">
+            <h2 className="text-2xl font-bold text-black">{winnerMessage}</h2>
+            <button
+              onClick={() => setWinnerMessage(null)}
+              className="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+            >
+              OK, Next Round!
+            </button>
+          </div>
+        </div>
+      )}
+
+      {feedback && (
+        <div className="mt-3 text-lg font-bold animate-bounce">{feedback}</div>
+      )}
+
+      <footer className="mt-5 text-center text-gray-500 text-sm">
+        -- # Outing Order & MM Haha Hihi # --
       </footer>
     </div>
   );
-}
+};
+
+export default TicTacToeQuiz;

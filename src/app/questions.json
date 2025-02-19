@@ -1,0 +1,259 @@
+{
+    "categories": [
+      {
+        "name": "IT",
+        "questions": [
+          {
+            "question": "Pada tahun berapa sistem operasi Linux pertama kali dirilis?",
+            "options": ["1989", "1991", "1995", "2000"],
+            "correct": "1991"
+          },
+          {
+            "question": "def weird_func():\n    return \"Hello\" or \"World\"\nprint(weird_func())\nApa output dari kode berikut di Python?",
+            "options": ["Hello", "World", "HelloWorld", "Error"],
+            "correct": "Hello"
+          },
+          {
+            "question": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    ch := make(chan int, 1)\n    ch <- 42\n    fmt.Println(<-ch)\n    fmt.Println(<-ch)\n}\nApa output dari kode berikut?",
+            "options": ["42\n0", "42\nruntime panic", "42\ndeadlock", "Compilation Error"],
+            "correct": "42\ndeadlock"
+          },
+          {
+            "question": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    arr := [5]int{1, 2, 3, 4, 5}\n    s := arr[1:4]\n    fmt.Println(len(s), cap(s))\n}\nApa output dari kode berikut?",
+            "options": ["3 3", "3 4", "3 5", "3 2"],
+            "correct": "3 4"
+          },
+          {
+            "question": "func modify(s []int) {\n    s[0] = 99\n}\n\ns := []int{1, 2, 3}\nmodify(_____)\nfmt.Println(s[0])",
+            "options": ["s[:]", "append([]int(nil), s...)", "&s", "s"],
+            "correct": "s"
+          },
+          {
+            "question": "Manakah dibawah ini yang bukan merupakan Design Pattern dengan Behavioral Patterns",
+            "options": ["Visitor", "State", "Adapter", "Strategy"],
+            "correct": "Adapter"
+          }
+        ]
+      },
+      {
+        "name": "Geography",
+        "questions": [
+          {
+            "question": "Negara dengan jumlah pulau terbanyak di dunia adalah?",
+            "options": ["Filipina", "Indonesia", "Swedia", "Jepang"],
+            "correct": "Swedia"
+          },
+          {
+            "question": "Ibukota negara Mongolia adalah?",
+            "options": ["Tashkent", "Ulaanbaatar", "Astana", "Bishkek"],
+            "correct": "Ulaanbaatar"
+          },
+          {
+            "question": "Gunung tertinggi di Eropa berada di negara mana?",
+            "options": ["Prancis", "Swiss", "Rusia", "Italia"],
+            "correct": "Rusia"
+          },
+          {
+            "question": "Negara mana yang memiliki zona waktu terbanyak?",
+            "options": ["Rusia", "Finlandia", "Prancis", "Kanada"],
+            "correct": "Prancis"
+          },
+          {
+            "question": "Apa ibu kota dari Australia?",
+            "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
+            "correct": "Canberra"
+          },
+          {
+            "question": "Apa ibu kota dari Brasil?",
+            "options": ["Sao Paulo", "Rio de Janeiro", "Brasilia", "Salvador"],
+            "correct": "Brasilia"
+          },
+          {
+            "question": "Apa ibu kota dari Kazakhstan?",
+            "options": ["Astana", "Almaty", "Bishkek", "Tashkent"],
+            "correct": "Astana"
+          },
+          {
+            "question": "Ibu kota negara manakah yang bernama Dodoma?",
+            "options": ["Tanzania", "Zimbabwe", "Namibia", "Uganda"],
+            "correct": "Tanzania"
+          },
+          {
+            "question": "Ibu kota negara manakah yang bernama Yamoussoukro?",
+            "options": ["Kamerun", "Pantai Gading", "Burkina Faso", "Gabon"],
+            "correct": "Pantai Gading"
+          },
+          {
+            "question": "Negara mana yang memiliki ibu kota bernama N'Djamena?",
+            "options": ["Niger", "Chad", "Sudan Selatan", "Mauritania"],
+            "correct": "Chad"
+          }
+        ]
+      },
+      {
+        "name": "Math",
+        "questions": [
+          {
+            "question": "Sebuah tim pekerja konstruksi membutuhkan waktu 10 hari untuk menyelesaikan sebuah proyek jika dikerjakan oleh 6 orang. Jika jumlah pekerja ditambah menjadi 15 orang, berapa hari yang dibutuhkan untuk menyelesaikan proyek yang sama, dengan asumsi setiap pekerja memiliki tingkat kerja yang sama?",
+            "options": ["4 hari", "6 hari", "8 hari", "5 hari"],
+            "correct": "4 hari"
+          },
+          {
+            "question": "Tujuh tahun lalu, usia Ayah 4 kali usia anaknya.\nSekarang, usia Ayah dua kali usia anaknya.\nBerapa usia Ayah saat ini?",
+            "options": ["28", "30", "32", "35"],
+            "correct": "30"
+          }
+        ]
+      },
+      {
+        "name": "Food",
+        "questions": [
+          {
+            "question": "Makanan apa yang berasal dari Prancis dan terbuat dari adonan yang dilipat berkali-kali?",
+            "options": ["Croissant", "Baguette", "Éclair", "Macaron"],
+            "correct": "Croissant"
+          },
+          {
+            "question": "Mana makanan yang bukan berbahan dasar tepung beras?",
+            "options": ["Klepon", "Putu Mayang", "Kue Cubit", "Lapis Legit"],
+            "correct": "Souvlaki"
+          },
+          {
+            "question": "Pilih makanan yang bukan berasal dari Jepang!",
+            "options": ["Okonomiyaki", "Kimchi", "Yakitori", "Takoyaki"],
+            "correct": "Kimchi"
+          },
+          {
+            "question": "Mana yang bukan makanan khas Betawi?",
+            "options": ["Kerak Telor", "Soto Betawi", "Nasi Uduk", "Gado-Gado"],
+            "correct": "Gado-Gado"
+          },
+          {
+            "question": "Mana makanan yang bisa dimakan mentah?",
+            "options": ["Gado-Gado", "Tahu Bulat", "Nasi Uduk", "Rujak Buah"],
+            "correct": "Rujak Buah"
+          },
+          {
+            "question": "Makanan khas dari daerah Ambon yang terbuat dari ikan cakalang yang disajikan dengan sambal colo-colo adalah?",
+            "options": ["Ikan Bakar Cakalang", "Ikan Cakalang Fufu", "Ikan Tudeh", "Ikan Woku"],
+            "correct": "Ikan Cakalang Fufu"
+          }
+        ]
+      },
+      {
+        "name": "Pengetahuan Umum",
+        "questions": [
+          {
+            "question": "Negara mana yang memiliki GDP (PDB) tertinggi di dunia pada tahun 2024?",
+            "options": ["China", "Jepang", "Jerman", "Amerika Serikat"],
+            "correct": "Amerika Serikat"
+          },
+          {
+            "question": "Negara mana yang memiliki ekonomi terbesar di Eropa?",
+            "options": ["Prancis", "Jerman", "Inggris", "Italia"],
+            "correct": "Jerman"
+          },
+          {
+            "question": "Ibukota negara manakah yang memiliki jumlah huruf terbanyak dalam ejaan resminya?",
+            "options": ["Bangkok, Thailand", "Sri Jayawardenepura Kotte, Sri Lanka", "Washington D.C., Amerika Serikat", "Phnom Penh, Kamboja"],
+            "correct": "Bangkok, Thailand"
+          },
+          {
+            "question": "Negara mana yang pernah memiliki walikota seekor kucing?",
+            "options": ["Kenya", "Amerika Serikat", "New Caledonia", "Guatemala"],
+            "correct": "Amerika Serikat"
+          },
+          {
+            "question": "Plat nomor KT berasal dari provinsi mana?",
+            "options": ["Kalimantan Timur", "Kalimantan Tengah", "Kalimantan Selatan", "Kalimantan Barat"],
+            "correct": "Kalimantan Timur"
+          },
+          {
+            "question": "Jika Anda melihat kendaraan dengan plat nomor \"Z\", kendaraan tersebut berasal dari mana?",
+            "options": ["Tasikmalaya", "Garut", "Cirebon", "Sukabumi"],
+            "correct": "Tasikmalaya"
+          },
+          {
+            "question": "Plat nomor \"DB\" digunakan di daerah mana?",
+            "options": ["Sulawesi Utara", "Gorontalo", "Sulawesi Tengah", "Sulawesi Selatan"],
+            "correct": "Sulawesi Utara"
+          },
+          {
+            "question": "Kode plat nomor \"EA\" digunakan untuk kendaraan dari provinsi mana?",
+            "options": ["Gorontalo", "Nusa Tenggara Barat", "Nusa Tenggara Timur", "Maluku"],
+            "correct": "Nusa Tenggara Barat"
+          }
+        ]
+      },
+      {
+        "name": "Sports",
+        "questions": [
+          {
+            "question": "Siapa pemain tenis putra yang memenangkan French Open terbanyak dalam sejarah?",
+            "options": ["Roger Federer", "Novak Djokovic", "Bjorn Borg", "Rafael Nadal"],
+            "correct": "Rafael Nadal"
+          },
+          {
+            "question": "Siapa pemain bulu tangkis Indonesia yang memenangkan medali emas Olimpiade pertama untuk Indonesia?",
+            "options": ["Susi Susanti", "Taufik Hidayat", "Alan Budikusuma", "Rudy Hartono"],
+            "correct": "Alan Budikusuma"
+          },
+          {
+            "question": "Tim mana yang memenangkan gelar NBA pertama pada tahun 1947?",
+            "options": ["Boston Celtics", "Minneapolis Lakers", "Philadelphia Warriors", "New York Knicks"],
+            "correct": "Philadelphia Warriors"
+          },
+          {
+            "question": "Dalam Formula 1, tim manakah yang memiliki jumlah gelar juara dunia konstruktor terbanyak?",
+            "options": ["Red Bull Racing", "Mercedes-AMG Petronas", "Scuderia Ferrari", "McLaren"],
+            "correct": "Scuderia Ferrari"
+          },
+          {
+            "question": "Dalam sejarah Piala Dunia FIFA, hanya ada satu negara yang pernah memenangkan turnamen tanpa kebobolan satu gol pun. Negara manakah itu?",
+            "options": ["Brazil", "Italia", "Uruguay", "Prancis"],
+            "correct": "Uruguay"
+          },
+          {
+            "question": "Dalam dunia catur, siapa yang menjadi juara dunia termuda sepanjang sejarah?",
+            "options": ["Magnus Carlsen", "Gukesh Dommaraju", "Garry Kasparov", "Anatoly Karpov"],
+            "correct": "Gukesh Dommaraju"
+          },
+          {
+            "question": "Siapakah satu-satunya petinju dalam sejarah yang memenangkan gelar juara dunia dalam 8 divisi berbeda?",
+            "options": ["Floyd Mayweather", "Oscar De La Hoya", "Manny Pacquiao", "Sugar Ray Leonard"],
+            "correct": "Manny Pacquiao"
+          },
+          {
+            "question": "Berapa jumlah Grand Slam yang harus dimenangkan seorang pemain tenis untuk mencapai \"Golden Slam\" dalam satu tahun kalender?",
+            "options": ["4", "5", "6", "7"],
+            "correct": "5"
+          },
+          {
+            "question": "Siapakah pelatih sepak bola yang telah memenangkan Liga Champions UEFA dengan tiga klub berbeda?",
+            "options": ["Mircea Lucescu", "Jose Mourinho", "Carlo Ancelotti", "Pep Guardiola"],
+            "correct": "Carlo Ancelotti"
+          },
+          {
+            "question": "Siapa pemain tenis yang telah memenangkan keempat turnamen Grand Slam setidaknya dua kali di era Open?",
+            "options": ["Roger Federer", "Novak Djokovic", "Rafael Nadal", "Rod Laver"],
+            "correct": "Novak Djokovic"
+          }
+        ]
+      },
+      {
+        "name": "History",
+        "questions": [
+          {
+            "question": "Urutkan 3 Filsuf Yunani Kuno paling legendaris dari yang tertua hingga termuda",
+            "options": ["Plato - Sokrates - Aristoteles", "Sokrates - Aristoteles - Plato", "Aristoteles - Plato - Sokrates", "Sokrates - Plato - Aristoteles"],
+            "correct": "Sokrates - Plato - Aristoteles"
+          },
+          {
+            "question": "Siapa presiden Amerika Serikat yang memimpin selama Perang Saudara?",
+            "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Theodore Roosevelt"],
+            "correct": "Abraham Lincoln"
+          }
+        ]
+      }
+    ]
+}
