@@ -116,7 +116,9 @@ const TicTacToeQuiz: React.FC = () => {
     const randomQuestion =
       availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
 
-    setSelectedQuestion({ ...randomQuestion, category: categoryName });
+    const shuffledOptions = [...randomQuestion.options].sort(() => Math.random() - 0.5);
+
+    setSelectedQuestion({ ...randomQuestion, options: shuffledOptions, category: categoryName });
     setSelectedIndex(index);
     setTimeLeft(60);
     setIsAnswering(true);
