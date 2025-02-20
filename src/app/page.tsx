@@ -89,38 +89,30 @@ const TicTacToeQuiz: React.FC = () => {
   const checkWinner = (board: (string | null)[]) => {
     const winningCombinations = [
       // Horizontal
-      [0, 1, 2],
-      [1, 2, 3],
-      [4, 5, 6],
-      [5, 6, 7],
-      [8, 9, 10],
-      [9, 10, 11],
-      [12, 13, 14],
-      [13, 14, 15],
-    
+      [0, 1, 2, 3],
+      [4, 5, 6, 7],
+      [8, 9, 10, 11],
+      [12, 13, 14, 15],
+  
       // Vertical
-      [0, 4, 8],
-      [4, 8, 12],
-      [1, 5, 9],
-      [5, 9, 13],
-      [2, 6, 10],
-      [6, 10, 14],
-      [3, 7, 11],
-      [7, 11, 15],
-    
+      [0, 4, 8, 12],
+      [1, 5, 9, 13],
+      [2, 6, 10, 14],
+      [3, 7, 11, 15],
+  
       // Diagonal (\)
-      [0, 5, 10],
+      [0, 5, 10, 15],
       [1, 6, 11],
-      [4, 9, 14],
-      [5, 10, 15],
-    
+      [2, 7, 12],
+      [3, 8, 13],
+  
       // Diagonal (/)
-      [3, 6, 9],
-      [2, 5, 8],
-      [7, 10, 13],
-      [6, 9, 12]
+      [3, 6, 9, 12],
+      [2, 5, 8, 11],
+      [1, 4, 7, 10],
+      [0, 3, 6, 9],
     ];
-    
+  
     for (let combination of winningCombinations) {
       const [a, b, c, d] = combination;
       if (board[a] && board[a] === board[b] && board[a] === board[c] && board[a] === board[d]) {
@@ -129,6 +121,7 @@ const TicTacToeQuiz: React.FC = () => {
     }
     return null;
   };
+  
 
   const resetTurn = () => {
     setFeedback(null);
@@ -240,7 +233,7 @@ const TicTacToeQuiz: React.FC = () => {
             currentPlayer === "O" ? "text-blue-500" : "text-red-500"
           }`}
         >
-          Current Turn: {currentPlayer === "O" ? "Team A (O)" : "Team B (X)"}
+          Current turn: {currentPlayer === "O" ? "Team A (O)" : "Team B (X)"}
         </h2>
       </div>
 
@@ -304,15 +297,17 @@ const TicTacToeQuiz: React.FC = () => {
       <div className="grid grid-cols-4 gap-4 mt-5">
         {board.map((cell, index) => (
           <button
-            key={index}
-            className={`w-28 h-28 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
-              darkMode
-                ? "border-gray-600 bg-gray-800"
-                : "border-gray-300 bg-white"
-            } ${selectedIndex === index ? "bg-green-500 text-white" : ""}`}
-            onClick={() => handleCellClick(index)}
-            disabled={!!cell || isAnswering}
-          >
+          key={index}
+          className={`w-28 h-28 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
+            darkMode
+              ? "border-gray-600 bg-gray-800"
+              : "border-gray-300 bg-white"
+          } ${selectedIndex === index ? "bg-green-500 text-white" : ""}
+          ${cell === "O" ? "bg-[#3b82f6] text-white" : ""}
+          ${cell === "X" ? "bg-[#ef4444] text-white" : ""}`}
+          onClick={() => handleCellClick(index)}
+          disabled={!!cell || isAnswering}
+        >
             <span className="p-5">{cell || cellCategories[index]}</span>
           </button>
         ))}
