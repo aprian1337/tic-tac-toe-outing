@@ -2059,6 +2059,180 @@
                     "correct": "8000 liter"
                 }
             ]
+        },
+        {
+          "name": "IT - Advance",
+          "questions": [
+            {
+              "question": "Apa kode status HTTP yang menunjukkan 'I'm a teapot'?",
+              "correct": "418",
+              "type": "input"
+            },
+            {
+              "question": "Dalam bahasa Go, fungsi apa yang digunakan untuk menangani panic agar tidak menghentikan program?",
+              "correct": "recover",
+              "type": "input"
+            },
+            {
+              "question": "Dalam PostgreSQL, perintah SQL apa yang digunakan untuk melihat indeks pada tabel?",
+              "correct": "SELECT * FROM pg_indexes",
+              "type": "input"
+            },
+            {
+              "question": "Apa nama teknik dalam deployment yang menggunakan dua lingkungan, satu aktif dan satu standby?",
+              "correct": "blue-green deployment",
+              "type": "input"
+            },
+            {
+              "question": "Dalam sistem Unix/Linux, perintah apa yang digunakan untuk mencari lokasi eksekusi suatu perintah?",
+              "correct": "which",
+              "type": "input"
+            },
+            {
+              "question": "Apa nama serangan keamanan yang mengeksploitasi perbedaan waktu eksekusi untuk membocorkan informasi?",
+              "correct": "timing attack",
+              "type": "input"
+            },
+            {
+              "question": "Dalam JWT, bagian apa yang digunakan untuk menyimpan klaim pengguna?",
+              "correct": "payload",
+              "type": "input"
+            },
+            {
+              "question": "Apa nama strategi untuk menangani konflik transaksi dalam database dengan memberikan prioritas kepada transaksi tertentu?",
+              "correct": "deadlock prevention",
+              "type": "input"
+            },
+            {
+              "question": "Dalam Go, package apa yang digunakan untuk menangani HTTP request?",
+              "correct": "net/http",
+              "type": "input"
+            },
+            {
+              "question": "Dalam pengelolaan memori, apa istilah untuk objek yang tidak bisa diakses tetapi belum dibebaskan oleh garbage collector?",
+              "correct": "memory leak",
+              "type": "input"
+            },
+            {
+              "question": "Apa yang terjadi jika sebuah goroutine di Go mengalami panic tanpa ada recovery?",
+              "options": ["Hanya goroutine tersebut yang berhenti", "Seluruh program crash", "Panic akan otomatis ditangani", "Error dikembalikan ke caller"],
+              "correct": "Seluruh program crash",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Dalam HTTP, status kode 418 berarti apa?",
+              "options": ["Server overload", "I'm a teapot", "Rate limit exceeded", "Authentication required"],
+              "correct": "I'm a teapot",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Apa yang terjadi jika dua transaksi di database mengalami deadlock?",
+              "options": ["Salah satu transaksi gagal", "Keduanya berjalan lambat", "Keduanya berhasil", "Database akan shutdown"],
+              "correct": "Salah satu transaksi gagal",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Dalam konteks keamanan web, apa yang dimaksud dengan 'timing attack'?",
+              "options": ["Menyerang sistem pada waktu tertentu", "Menganalisis waktu eksekusi untuk mencuri data", "Menggunakan waktu sebagai parameter eksploitasi", "Mempercepat eksekusi serangan"],
+              "correct": "Menganalisis waktu eksekusi untuk mencuri data",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Manakah yang paling mungkin menyebabkan memory leak dalam aplikasi Go?",
+              "options": ["Menggunakan slice terlalu besar", "Goroutine yang tidak dihentikan", "Terlalu banyak variabel global", "Menggunakan struct terlalu kompleks"],
+              "correct": "Goroutine yang tidak dihentikan",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Dalam sistem file Linux, perintah apa yang bisa menghapus file secara permanen tanpa bisa dikembalikan?",
+              "options": ["rm -rf", "shred", "unlink", "mv /dev/null"],
+              "correct": "shred",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Apa risiko utama dari penggunaan JWT tanpa mekanisme refresh token?",
+              "options": ["Token bisa direkayasa", "Server terlalu banyak beban", "Token bisa digunakan selamanya", "Client harus menyimpan token lokal"],
+              "correct": "Token bisa digunakan selamanya",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Dalam PostgreSQL, apa yang terjadi jika sebuah query menggunakan indeks tetapi performanya tetap buruk?",
+              "options": ["Indeks tidak berguna", "Query planner salah memilih indeks", "Data terlalu kecil untuk diindeks", "Server tidak cukup RAM"],
+              "correct": "Query planner salah memilih indeks",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Dalam konteks deployment zero downtime, apa fungsi dari 'blue-green deployment'?",
+              "options": ["Mengurangi downtime saat update", "Memastikan rollback otomatis", "Menjaga performa database", "Menggunakan dua server untuk load balancing"],
+              "correct": "Mengurangi downtime saat update",
+              "type": "multiple-choice"
+            },
+            {
+              "question": "Apa yang terjadi jika dua request berbeda menggunakan koneksi database yang sama secara bersamaan dalam aplikasi Go?",
+              "options": ["Salah satu request gagal", "Keduanya berjalan normal", "Terjadi race condition", "Database akan terkunci"],
+              "correct": "Terjadi race condition",
+              "type": "multiple-choice"
+            }
+          ]
+        },
+        {
+          "name": "IPA",
+          "questions": [
+            {
+              "question": "Gas apa yang paling melimpah di atmosfer bumi?",
+              "correct": "Nitrogen",
+              "type": "input"
+            },
+            {
+              "question": "Apa nama lapisan atmosfer yang melindungi bumi dari radiasi ultraviolet?",
+              "correct": "Ozon",
+              "type": "input"
+            },
+            {
+              "question": "Apa rumus kimia dari asam sulfat?",
+              "correct": "H2SO4",
+              "type": "input"
+            },
+            {
+              "question": "Di antara berikut, manakah yang merupakan planet dengan rotasi paling lambat?",
+              "options": ["Venus", "Mars", "Jupiter", "Merkurius"],
+              "correct": "Venus",
+              "type": "multiple choice"
+            },
+            {
+              "question": "Hewan apa yang bisa bertahan hidup paling lama tanpa air?",
+              "options": ["Unta", "Tardigrade", "Kadal gurun", "Kelelawar"],
+              "correct": "Tardigrade",
+              "type": "multiple choice"
+            },
+            {
+              "question": "Senyawa apa yang menyebabkan daun berwarna hijau?",
+              "correct": "Klorofil",
+              "type": "input"
+            },
+            {
+              "question": "Apa satuan untuk mengukur frekuensi gelombang?",
+              "options": ["Hertz", "Joule", "Newton", "Pascal"],
+              "correct": "Hertz",
+              "type": "multiple choice"
+            },
+            {
+              "question": "Reaksi kimia apa yang terjadi saat besi berkarat?",
+              "correct": "Oksidasi",
+              "type": "input"
+            },
+            {
+              "question": "Bagian otak mana yang mengatur keseimbangan tubuh?",
+              "options": ["Serebelum", "Hipotalamus", "Hipokampus", "Medula oblongata"],
+              "correct": "Serebelum",
+              "type": "multiple choice"
+            },
+            {
+              "question": "Apa nama planet yang memiliki mata badai raksasa bernama 'Great Red Spot'?",
+              "correct": "Jupiter",
+              "type": "input"
+            }
+          ]
         }
     ]
 }
