@@ -118,7 +118,18 @@ const TicTacToeQuiz: React.FC = () => {
     const randomQuestion =
       availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
 
-    setSelectedQuestion({ ...randomQuestion, category: categoryName });
+    let shuffledOptions = randomQuestion.options;
+    if (randomQuestion.options) {
+      shuffledOptions = [...randomQuestion.options].sort(
+        () => Math.random() - 0.5
+      );
+    }
+
+    setSelectedQuestion({
+      ...randomQuestion,
+      options: shuffledOptions,
+      category: categoryName,
+    });
     setSelectedIndex(index);
     setTimeLeft(60);
     setIsAnswering(true);
@@ -203,22 +214,11 @@ const TicTacToeQuiz: React.FC = () => {
           Current Turn: {currentPlayer === "O" ? "Team A (O)" : "Team B (X)"}
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-4 mt-5">
-        {board.map((cell, index) => (
-          <button
-            key={index}
-            className={`w-24 h-24 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
-              darkMode
-                ? "border-gray-600 bg-gray-800"
-                : "border-gray-300 bg-white"
-            } ${selectedIndex === index ? "bg-green-500 text-white" : ""}`}
-            onClick={() => handleCellClick(index)}
-            disabled={!!cell || isAnswering}
-          >
-            <span>{cell || cellCategories[index]}</span>
-          </button>
-        ))}
-      </div>
+
+      {feedback && (
+        <div className="mt-3 text-lg font-bold animate-bounce">{feedback}</div>
+      )}
+
       {selectedQuestion && (
         <div
           className={`mt-5 p-5 border rounded-lg shadow-md w-96 animate-fade-in transition-all duration-300 
@@ -232,7 +232,7 @@ const TicTacToeQuiz: React.FC = () => {
           <p className="whitespace-pre-wrap mt-2">
             {selectedQuestion.question}
           </p>
-          {selectedQuestion.type === "multiple-choice" ? (
+          {selectedQuestion.type === "input" ? (
             <div className="mt-3">
               <input
                 type="text"
@@ -272,7 +272,22 @@ const TicTacToeQuiz: React.FC = () => {
           </div>
         </div>
       )}
-
+      <div className="grid grid-cols-3 gap-4 mt-5">
+        {board.map((cell, index) => (
+          <button
+            key={index}
+            className={`w-24 h-24 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
+              darkMode
+                ? "border-gray-600 bg-gray-800"
+                : "border-gray-300 bg-white"
+            } ${selectedIndex === index ? "bg-green-500 text-white" : ""}`}
+            onClick={() => handleCellClick(index)}
+            disabled={!!cell || isAnswering}
+          >
+            <span>{cell || cellCategories[index]}</span>
+          </button>
+        ))}
+      </div>
       {winnerMessage && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-5 rounded-lg shadow-lg text-center animate-fade-in">
@@ -286,11 +301,6 @@ const TicTacToeQuiz: React.FC = () => {
           </div>
         </div>
       )}
-
-      {feedback && (
-        <div className="mt-3 text-lg font-bold animate-bounce">{feedback}</div>
-      )}
-
       <footer className="mt-5 text-center text-gray-500 text-sm">
         -- # Outing Order & MM Haha Hihi # --
       </footer>
