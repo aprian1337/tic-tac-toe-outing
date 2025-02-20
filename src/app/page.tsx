@@ -20,10 +20,11 @@ type QuestionsData = {
 };
 
 const TicTacToeQuiz: React.FC = () => {
-  const [board, setBoard] = useState<(string | null)[]>(Array(9).fill(null));
+  const multiply = 16
+  const [board, setBoard] = useState<(string | null)[]>(Array(multiply).fill(null));
   const [categories, setCategories] = useState<Category[]>([]);
   const [cellCategories, setCellCategories] = useState<string[]>(
-    Array(9).fill("")
+    Array(multiply).fill("")
   );
   const [currentPlayer, setCurrentPlayer] = useState<"O" | "X">("O");
   const [selectedQuestion, setSelectedQuestion] = useState<
@@ -59,13 +60,17 @@ const TicTacToeQuiz: React.FC = () => {
   useEffect(() => {
     const data = questionsData as QuestionsData;
     setCategories(data.categories);
-    const randomCategories = Array(9)
-      .fill(null)
-      .map(() => {
-        const randomCategory =
-          data.categories[Math.floor(Math.random() * data.categories.length)];
-        return randomCategory.name;
-      });
+  
+    const shuffledCategories = [...data.categories];
+  
+    while (shuffledCategories.length < multiply) {
+      shuffledCategories.push(...data.categories);
+    }
+  
+    shuffledCategories.sort(() => Math.random() - 0.5);
+  
+    const randomCategories = shuffledCategories.slice(0, multiply).map((category) => category.name);
+    
     setCellCategories(randomCategories);
   }, []);
 
@@ -83,18 +88,20 @@ const TicTacToeQuiz: React.FC = () => {
 
   const checkWinner = (board: (string | null)[]) => {
     const winningCombinations = [
-      [0, 1, 2],
-      [3, 4, 5],
-      [6, 7, 8],
-      [0, 3, 6],
-      [1, 4, 7],
-      [2, 5, 8],
-      [0, 4, 8],
-      [2, 4, 6],
+      [0, 1, 2, 3],
+      [4, 5, 6, 7],
+      [8, 9, 10, 11],
+      [12, 13, 14, 15],
+      [0, 4, 8, 12],
+      [1, 5, 9, 13],
+      [2, 6, 10, 14],
+      [3, 7, 11, 15],
+      [0, 5, 10, 15],
+      [3, 6, 9, 12],
     ];
     for (let combination of winningCombinations) {
-      const [a, b, c] = combination;
-      if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+      const [a, b, c, d] = combination;
+      if (board[a] && board[a] === board[b] && board[a] === board[c] && board[a] === board[d]) {
         return board[a];
       }
     }
@@ -163,7 +170,7 @@ const TicTacToeQuiz: React.FC = () => {
     setTimeout(() => {
       setIsCheckAnswer(false);
       setIsAnswering(false);
-      setUserAnswer(""); // Reset input setelah menjawab
+      setUserAnswer("");
       resetTurn();
     }, 1000);
   };
@@ -177,13 +184,13 @@ const TicTacToeQuiz: React.FC = () => {
         `🏆 Team ${winner === "O" ? "A" : "B"} is the champion!`
       );
       setScores({ O: 0, X: 0 });
-      setBoard(Array(9).fill(null));
+      setBoard(Array(multiply).fill(null));
       resetTurn();
     } else {
       setWinnerMessage(
         `🎉 Team ${winner === "O" ? "A" : "B"} wins this round!`
       );
-      setBoard(Array(9).fill(null));
+      setBoard(Array(multiply).fill(null));
       resetTurn();
     }
   };
@@ -272,11 +279,11 @@ const TicTacToeQuiz: React.FC = () => {
           </div>
         </div>
       )}
-      <div className="grid grid-cols-3 gap-4 mt-5">
+      <div className="grid grid-cols-4 gap-4 mt-5">
         {board.map((cell, index) => (
           <button
             key={index}
-            className={`w-24 h-24 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
+            className={`w-28 h-28 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
               darkMode
                 ? "border-gray-600 bg-gray-800"
                 : "border-gray-300 bg-white"
@@ -284,7 +291,7 @@ const TicTacToeQuiz: React.FC = () => {
             onClick={() => handleCellClick(index)}
             disabled={!!cell || isAnswering}
           >
-            <span>{cell || cellCategories[index]}</span>
+            <span className="p-5">{cell || cellCategories[index]}</span>
           </button>
         ))}
       </div>

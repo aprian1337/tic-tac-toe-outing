@@ -1,709 +1,2064 @@
 {
     "categories": [
-      {
-        "name": "IT",
-        "questions": [
-          {
-            "question": "Pada tahun berapa sistem operasi Linux pertama kali dirilis?",
-            "options": ["1989", "1991", "1995", "2000"],
-            "correct": "1991"
-          },
-          {
-            "question": "def weird_func():\n    return \"Hello\" or \"World\"\nprint(weird_func())\nApa output dari kode berikut di Python?",
-            "options": ["Hello", "World", "HelloWorld", "Error"],
-            "correct": "Hello"
-          },
-          {
-            "question": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    ch := make(chan int, 1)\n    ch <- 42\n    fmt.Println(<-ch)\n    fmt.Println(<-ch)\n}\nApa output dari kode berikut?",
-            "options": ["42\n0", "42\nruntime panic", "42\ndeadlock", "Compilation Error"],
-            "correct": "42\ndeadlock"
-          },
-          {
-            "question": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    arr := [5]int{1, 2, 3, 4, 5}\n    s := arr[1:4]\n    fmt.Println(len(s), cap(s))\n}\nApa output dari kode berikut?",
-            "options": ["3 3", "3 4", "3 5", "3 2"],
-            "correct": "3 4"
-          },
-          {
-            "question": "func modify(s []int) {\n    s[0] = 99\n}\n\ns := []int{1, 2, 3}\nmodify(_____)\nfmt.Println(s[0])",
-            "options": ["s[:]", "append([]int(nil), s...)", "&s", "s"],
-            "correct": "s"
-          },
-          {
-            "question": "Manakah dibawah ini yang bukan merupakan Design Pattern dengan Behavioral Patterns",
-            "options": ["Visitor", "State", "Adapter", "Strategy"],
-            "correct": "Adapter"
-          },
-          {
-            "question": "Dalam konteks sistem terdistribusi, apa itu 'CAP Theorem'?",
-            "options": ["Consistency, Authentication, Partition Tolerance","Consistency, Authentication, Persistent","Consistency, Accountability, Partition Tolerance","Consistency, Availability, Partition Tolerance"],
-            "correct": "Consistency, Availability, Partition Tolerance"
-          },
-          {
-            "question": "Apa yang dimaksud dengan 'monads' dalam pemrograman fungsional?",
-            "options": ["Struktur data untuk menyimpan nilai","Pola desain untuk menangani side effects dan operasi komputasi berurutan","Algoritma untuk pencarian dalam grafik","Bahasa pemrograman yang didesain untuk menghitung nilai dalam logika predikat"],
-            "correct": "Pola desain untuk menangani side effects dan operasi komputasi berurutan"
-          },
-          {
-            "question": "Dalam teori kompleksitas algoritma, apa yang dimaksud dengan 'NP-complete'?",
-            "options": ["Kelas masalah yang dapat diselesaikan dalam waktu polinomial dengan algoritma yang efisien","Kelas masalah yang hanya dapat diselesaikan dengan algoritma non-deterministik dalam waktu polinomial","Kelas masalah yang tidak dapat diselesaikan dalam waktu polinomial, bahkan dengan algoritma yang sangat efisien","Kelas masalah yang dapat diselesaikan dalam waktu polinomial, tetapi memerlukan ruang yang sangat besar"],
-            "correct": "Kelas masalah yang hanya dapat diselesaikan dengan algoritma non-deterministik dalam waktu polinomial"
-          },
-          {
-            "question": "Apa yang dimaksud dengan 'Turing Completeness'?",
-            "options": ["Kemampuan sebuah mesin atau bahasa pemrograman untuk menyelesaikan tugas-tugas yang dapat diselesaikan oleh komputer klasik","Kemampuan sebuah sistem untuk mensimulasikan algoritma dari mesin Turing","Kemampuan bahasa pemrograman untuk memecahkan masalah dalam waktu konstan","Kemampuan komputer untuk menangani operasi yang melibatkan banyak dimensi"],
-            "correct": "Kemampuan sebuah sistem untuk mensimulasikan algoritma dari mesin Turing"
-          },
-          {
-            "question": "Apa kepanjangan dari 'BGP' dalam konteks jaringan komputer?",
-            "options": ["Basic Gateway Protocol","Border Gateway Protocol","Binary Gateway Protocol","Broadband Gateway Protocol"],
-            "correct": "Border Gateway Protocol"
-          },
-          {
-            "question": "Apa yang dimaksud dengan 'RAID' dalam sistem penyimpanan data?",
-            "options": ["Redundant Array of Independent Disks","Random Access Independent Disks"," Redundant Array of Integrated Devices","Remote Array of Integrated Disks"],
-            "correct": "Redundant Array of Independent Disks"
-          },
-          {
-            "question": "Apa kepanjangan dari 'RAID 0' dalam teknologi penyimpanan data?",
-            "options": ["Redundant Array of Independent Disks - Zero","Random Array of Independent Disks - Optimized","Redundant Array of Independent Disks - Distributed","Redundant Array of Independent Disks - Striped"],
-            "correct": "Redundant Array of Independent Disks - Striped"
-          }
-        ]
-      },
-      {
-        "name": "Geography",
-        "questions": [
-          {
-            "question": "Negara dengan jumlah pulau terbanyak di dunia adalah?",
-            "options": ["Filipina", "Indonesia", "Swedia", "Jepang"],
-            "correct": "Swedia"
-          },
-          {
-            "question": "Ibukota negara Mongolia adalah?",
-            "options": ["Tashkent", "Ulaanbaatar", "Astana", "Bishkek"],
-            "correct": "Ulaanbaatar"
-          },
-          {
-            "question": "Gunung tertinggi di Eropa berada di negara mana?",
-            "options": ["Prancis", "Swiss", "Rusia", "Italia"],
-            "correct": "Rusia"
-          },
-          {
-            "question": "Negara mana yang memiliki zona waktu terbanyak?",
-            "options": ["Rusia", "Finlandia", "Prancis", "Kanada"],
-            "correct": "Prancis"
-          },
-          {
-            "question": "Apa ibu kota dari Australia?",
-            "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
-            "correct": "Canberra"
-          },
-          {
-            "question": "Apa ibu kota dari Brasil?",
-            "options": ["Sao Paulo", "Rio de Janeiro", "Brasilia", "Salvador"],
-            "correct": "Brasilia"
-          },
-          {
-            "question": "Apa ibu kota dari Kazakhstan?",
-            "options": ["Astana", "Almaty", "Bishkek", "Tashkent"],
-            "correct": "Astana"
-          },
-          {
-            "question": "Ibu kota negara manakah yang bernama Dodoma?",
-            "options": ["Tanzania", "Zimbabwe", "Namibia", "Uganda"],
-            "correct": "Tanzania"
-          },
-          {
-            "question": "Ibu kota negara manakah yang bernama Yamoussoukro?",
-            "options": ["Kamerun", "Pantai Gading", "Burkina Faso", "Gabon"],
-            "correct": "Pantai Gading"
-          },
-          {
-            "question": "Negara mana yang memiliki ibu kota bernama N'Djamena?",
-            "options": ["Niger", "Chad", "Sudan Selatan", "Mauritania"],
-            "correct": "Chad"
-          },
-          {
-            "question": "Laut apa yang terletak di antara semenanjung Italia dan benua Eropa?",
-            "options": ["Laut Mediterania", "Laut Adriatik", "Laut Aegea", "Laut Karibia"],
-            "correct": "Laut Adriatik"
-          },
-          {
-            "question": "Di negara mana terletak danau paling dalam di dunia, Danau Baikal?",
-            "options": ["Kazakhstan", "Rusia", "Mongolia", "China"],
-            "correct": "Rusia"
-          },
-          {
-            "question": "Apa nama sungai yang mengalir melalui kota Paris?",
-            "options": ["Sungai Thames", "Sungai Danube", "Sungai Seine", "Sungai Loire"],
-            "correct": "Sungai Seine"
-          },
-          {
-            "question": "Benua manakah yang memiliki jumlah negara terbanyak?",
-            "options": ["Afrika", "Asia", "Eropa", "Amerika"],
-            "correct": "Afrika"
-          },
-          {
-            "question": "Apa nama sungai terpanjang di dunia?",
-            "options": ["Amazon", "Nil", "Yangtze", "Mississippi"],
-            "correct": "Nil"
-          }
-        ]
-      },
-      {
-        "name": "Arts",
-        "questions": [
-          {
-            "question": "Siapa penulis novel '1984'?",
-            "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Margaret Atwood"],
-            "correct": "George Orwell"
-          },
-          {
-            "question": "Siapa pengarang novel 'The Great Gatsby'?",
-            "options": ["Ernest Hemingway", "F. Scott Fitzgerald", "John Steinbeck", "William Faulkner"],
-            "correct": "F. Scott Fitzgerald"
-          },
-          {
-            "question": "Siapa penyanyi yang terkenal dengan lagu 'Like a Rolling Stone' dan dijuluki 'Bob Dylan'?",
-            "options": ["Bruce Springsteen", "Bob Dylan", "Johnny Cash", "Elvis Presley"],
-            "correct": "Bob Dylan"
-          },
-          {
-            "question": "Film apa yang memenangkan Academy Award untuk Film Terbaik pada tahun 1994?",
-            "options": ["The Shawshank Redemption", "Pulp Fiction", "Forrest Gump", "The Godfather"],
-            "correct": "Forrest Gump"
-          },
-          {
-            "question": "Film 'Avengers: Endgame' dirilis pada tahun?",
-            "options": ["2018", "2019", "2020", "2021"],
-            "correct": "2019"
-          },
-          {
-            "question": "Siapa sutradara yang mengarahkan film 'Mad Max: Fury Road' (2015), yang memenangkan 6 Oscar?",
-            "options": ["George Miller", "James Cameron", "Ridley Scott", "Peter Jackson"],
-            "correct": "George Miller"
-          },
-          {
-            "question": "Dalam film 'The Revenant' (2015), siapa yang memenangkan Oscar sebagai Aktor Terbaik untuk perannya sebagai Hugh Glass?",
-            "options": ["Matthew McConaughey", "Leonardo DiCaprio", "Tom Hardy", "Christian Bale"],
-            "correct": "Leonardo DiCaprio"
-          },
-          {
-            "question": "Siapa sutradara film 'The Shape of Water' (2017), yang meraih Oscar untuk Film Terbaik?",
-            "options": ["Guillermo del Toro", "Tim Burton", "Steven Spielberg", "Martin Scorsese"],
-            "correct": "Guillermo del Toro"
-          },
-          {
-            "question": "Film 'Parasite' (2019) menjadi film non-Bahasa Inggris pertama yang memenangkan Oscar Film Terbaik. Siapa sutradara film ini?",
-            "options": ["Bong Joon-ho", "Park Chan-wook", "Lee Chang-dong", "Kim Ki-duk"],
-            "correct": "Bong Joon-ho"
-          },
-          {
-            "question": "Film 'The Lion King' (2019) adalah versi live-action dari film animasi tahun berapa?",
-            "options": ["1989", "1994", "2001", "2010"],
-            "correct": "1994"
-          },
-          {
-            "question": "Dalam film 'No Time to Die' (2021), siapa yang terakhir kali berperan sebagai James Bond sebelum Daniel Craig?",
-            "options": ["Pierce Brosnan", "Sean Connery", "Roger Moore", "Timothy Dalton"],
-            "correct": "Pierce Brosnan"
-          },
-          {
-            "question": "Siapa yang memenangkan penghargaan Best Actress di Oscar 2021 untuk perannya dalam film 'Nomadland'?",
-            "options": ["Frances McDormand", "Viola Davis", "Andra Day", "Carey Mulligan"],
-            "correct": "Frances McDormand"
-          }
-        ]
-      },
-      {
-        "name": "Math",
-        "questions": [
-          {
-            "question": "Sebuah tim pekerja konstruksi membutuhkan waktu 10 hari untuk menyelesaikan sebuah proyek jika dikerjakan oleh 6 orang. Jika jumlah pekerja ditambah menjadi 15 orang, berapa hari yang dibutuhkan untuk menyelesaikan proyek yang sama, dengan asumsi setiap pekerja memiliki tingkat kerja yang sama?",
-            "options": ["4 hari", "6 hari", "8 hari", "5 hari"],
-            "correct": "4 hari"
-          },
-          {
-            "question": "Tujuh tahun lalu, usia Ayah 4 kali usia anaknya.\nSekarang, usia Ayah dua kali usia anaknya.\nBerapa usia Ayah saat ini?",
-            "options": ["28", "30", "32", "35"],
-            "correct": "30"
-          },
-          {
-            "question": "Sebuah perusahaan memiliki 100 karyawan. Saat ini, 99% dari mereka telah menyelesaikan pelatihan sertifikasi khusus. Manajemen ingin menurunkan persentase ini menjadi 98% dengan mengurangi jumlah karyawan yang telah bersertifikasi. Berapa banyak karyawan bersertifikasi yang harus dikeluarkan dari perusahaan agar persentase turun menjadi 98%?",
-            "type": "input",
-            "correct": "50"
-          },
-          {
-            "question": "Sebuah perusahaan menginvestasikan Rp 5.000.000 pada proyek dengan tingkat pengembalian 10% per tahun. Berapa nilai investasi tersebut setelah 3 tahun?",
-            "options": ["Rp 6.500.000", "Rp 7.000.000", "Rp 7.500.000", "Rp 8.000.000"],
-            "correct": "Rp 6.650.000"
-          },
-          {
-            "question": "Dalam sebuah pertandingan, seorang pemain memenangkan 70% dari 200 pertandingan yang dimainkan. Jika ia kehilangan 25% dari sisa pertandingan, berapa banyak pertandingan yang dia menangkan dan kalah?",
-            "options": ["140 menang, 50 kalah", "140 menang, 60 kalah", "150 menang, 50 kalah", "150 menang, 60 kalah"],
-            "correct": "140 menang, 60 kalah"
-          },
-          {
-            "question": "Jika suatu barang mengalami kenaikan harga 15% dan harga baru barang tersebut menjadi Rp 460.000, berapakah harga awal barang tersebut?",
-            "options": ["Rp 400.000", "Rp 450.000", "Rp 425.000", "Rp 440.000"],
-            "correct": "Rp 400.000"
-          },
-          {
-            "question": "Sebuah kotak berisi 5 bola merah, 3 bola biru, dan 2 bola hijau. Jika 3 bola diambil secara acak, berapa peluang untuk mengambil 2 bola merah dan 1 bola biru?",
-            "options": ["5/56", "15/56", "10/56", "3/56"],
-            "correct": "15/56"
-          },
-          {
-            "question": "Dari 8 orang yang akan dipilih menjadi ketua dan wakil ketua dalam sebuah organisasi, berapa banyak cara yang dapat dilakukan untuk memilih ketua dan wakil ketua?",
-            "options": ["56", "64", "72", "80"],
-            "correct": "56"
-          },
-          {
-            "question": "Dari 10 buku yang tersedia, 4 di antaranya adalah buku matematika. Jika 3 buku dipilih secara acak, berapa banyak cara untuk memilih 2 buku matematika dan 1 buku non-matematika?",
-            "options": ["84", "90", "96", "100"],
-            "correct": "84"
-          },
-          {
-            "question": "Dalam sebuah lomba, terdapat 6 peserta yang akan dipilih untuk menduduki 3 posisi teratas (juara 1, 2, dan 3). Berapa banyak cara untuk memilih pemenang lomba tersebut?",
-            "options": ["120", "100", "90", "80"],
-            "correct": "120"
-          },
-          {
-            "question": "Jika sebuah kotak berisi 10 bola, terdiri dari 4 bola merah, 3 bola biru, dan 3 bola hijau, berapa banyak cara untuk memilih 4 bola secara acak jika bola yang dipilih harus terdiri dari 2 bola merah, 1 bola biru, dan 1 bola hijau?",
-            "options": ["150", "175", "180", "200"],
-            "correct": "150"
-          }
-        ]
-      },
-      {
-        "name": "Food",
-        "questions": [
-          {
-            "question": "Makanan apa yang berasal dari Prancis dan terbuat dari adonan yang dilipat berkali-kali?",
-            "options": ["Croissant", "Baguette", "Éclair", "Macaron"],
-            "correct": "Croissant"
-          },
-          {
-            "question": "Mana makanan yang bukan berbahan dasar tepung beras?",
-            "options": ["Klepon", "Putu Mayang", "Kue Cubit", "Lapis Legit"],
-            "correct": "Souvlaki"
-          },
-          {
-            "question": "Pilih makanan yang bukan berasal dari Jepang!",
-            "options": ["Okonomiyaki", "Kimchi", "Yakitori", "Takoyaki"],
-            "correct": "Kimchi"
-          },
-          {
-            "question": "Mana yang bukan makanan khas Betawi?",
-            "options": ["Kerak Telor", "Soto Betawi", "Nasi Uduk", "Gado-Gado"],
-            "correct": "Gado-Gado"
-          },
-          {
-            "question": "Mana makanan yang bisa dimakan mentah?",
-            "options": ["Gado-Gado", "Tahu Bulat", "Nasi Uduk", "Rujak Buah"],
-            "correct": "Rujak Buah"
-          },
-          {
-            "question": "Makanan khas dari daerah Ambon yang terbuat dari ikan cakalang yang disajikan dengan sambal colo-colo adalah?",
-            "options": ["Ikan Bakar Cakalang", "Ikan Cakalang Fufu", "Ikan Tudeh", "Ikan Woku"],
-            "correct": "Ikan Cakalang Fufu"
-          },
-          {
-            "question": "Makanan khas yang terbuat dari ketan, kelapa parut, dan gula merah, biasanya dibungkus dengan daun pisang, disebut?",
-            "options": ["Lapis legit", "Klepon", "Lontong", "Serabi"],
-            "correct": "Klepon"
-          },
-          {
-            "question": "Salah satu rempah yang digunakan untuk memberikan aroma dan rasa khas pada masakan Indonesia, terutama pada nasi goreng dan soto, adalah?",
-            "options": ["Kalamak", "Kunyit", "Ketumbar", "Sereh"],
-            "correct": "Kunyit"
-          },
-          {
-            "question": "Kunci utama dari rasa khas rendang berasal dari bumbu yang dimasak bersama santan dan rempah-rempah. Salah satu rempah utama yang digunakan adalah?",
-            "options": ["Cengkeh", "Kunyit", "Jahe", "Lada"],
-            "correct": "Cengkeh"
-          }
-        ]
-      },
-      {
-        "name": "Pengetahuan Umum",
-        "questions": [
-          {
-            "question": "Negara mana yang memiliki GDP (PDB) tertinggi di dunia pada tahun 2024?",
-            "options": ["China", "Jepang", "Jerman", "Amerika Serikat"],
-            "correct": "Amerika Serikat"
-          },
-          {
-            "question": "Negara mana yang memiliki ekonomi terbesar di Eropa?",
-            "options": ["Prancis", "Jerman", "Inggris", "Italia"],
-            "correct": "Jerman"
-          },
-          {
-            "question": "Apa nama ibukota negara Kanada?",
-            "options": ["Ottawa", "Toronto", "Vancouver", "Montreal"],
-            "correct": "Ottawa"
-          },
-          {
-            "question": "Siapa yang menjadi wali kota pertama Jakarta setelah kemerdekaan Indonesia?",
-            "options": ["Ali Sadikin", "Sutiyoso", "Abdurrahman Baswedan", "Soemarno"],
-            "correct": "Soemarno"
-          },
-          {
-            "question": "Ibukota negara manakah yang memiliki jumlah huruf terbanyak dalam ejaan resminya?",
-            "options": ["Bangkok, Thailand", "Sri Jayawardenepura Kotte, Sri Lanka", "Washington D.C., Amerika Serikat", "Phnom Penh, Kamboja"],
-            "correct": "Bangkok, Thailand"
-          },
-          {
-            "question": "Negara mana yang pernah memiliki walikota seekor kucing?",
-            "options": ["Kenya", "Amerika Serikat", "New Caledonia", "Guatemala"],
-            "correct": "Amerika Serikat"
-          },
-          {
-            "question": "Plat nomor KT berasal dari provinsi mana?",
-            "options": ["Kalimantan Timur", "Kalimantan Tengah", "Kalimantan Selatan", "Kalimantan Barat"],
-            "correct": "Kalimantan Timur"
-          },
-          {
-            "question": "Jika Anda melihat kendaraan dengan plat nomor \"Z\", kendaraan tersebut berasal dari mana?",
-            "options": ["Tasikmalaya", "Garut", "Cirebon", "Sukabumi"],
-            "correct": "Tasikmalaya"
-          },
-          {
-            "question": "Plat nomor \"DB\" digunakan di daerah mana?",
-            "options": ["Sulawesi Utara", "Gorontalo", "Sulawesi Tengah", "Sulawesi Selatan"],
-            "correct": "Sulawesi Utara"
-          },
-          {
-            "question": "Kode plat nomor \"EA\" digunakan untuk kendaraan dari provinsi mana?",
-            "options": ["Gorontalo", "Nusa Tenggara Barat", "Nusa Tenggara Timur", "Maluku"],
-            "correct": "Nusa Tenggara Barat"
-          },
-          {
-            "question": "Pada tahun berapa Jakarta secara resmi berganti nama dari Batavia menjadi Jakarta?",
-            "options": ["1945", "1949", "1960", "1972"],
-            "correct": "1949"
-          }
-        ]
-      },
-      {
-        "name": "Sports",
-        "questions": [
-          {
-            "question": "Siapa pemain tenis putra yang memenangkan French Open terbanyak dalam sejarah?",
-            "options": ["Roger Federer", "Novak Djokovic", "Bjorn Borg", "Rafael Nadal"],
-            "correct": "Rafael Nadal"
-          },
-          {
-            "question": "Siapa pemain bulu tangkis Indonesia yang memenangkan medali emas Olimpiade pertama untuk Indonesia?",
-            "options": ["Susi Susanti", "Taufik Hidayat", "Alan Budikusuma", "Rudy Hartono"],
-            "correct": "Alan Budikusuma"
-          },
-          {
-            "question": "Tim mana yang memenangkan gelar NBA pertama pada tahun 1947?",
-            "options": ["Boston Celtics", "Minneapolis Lakers", "Philadelphia Warriors", "New York Knicks"],
-            "correct": "Philadelphia Warriors"
-          },
-          {
-            "question": "Dalam Formula 1, tim manakah yang memiliki jumlah gelar juara dunia konstruktor terbanyak?",
-            "options": ["Red Bull Racing", "Mercedes-AMG Petronas", "Scuderia Ferrari", "McLaren"],
-            "correct": "Scuderia Ferrari"
-          },
-          {
-            "question": "Dalam sejarah Piala Dunia FIFA, hanya ada satu negara yang pernah memenangkan turnamen tanpa kebobolan satu gol pun. Negara manakah itu?",
-            "options": ["Brazil", "Italia", "Uruguay", "Prancis"],
-            "correct": "Uruguay"
-          },
-          {
-            "question": "Dalam dunia catur, siapa yang menjadi juara dunia termuda sepanjang sejarah?",
-            "options": ["Magnus Carlsen", "Gukesh Dommaraju", "Garry Kasparov", "Anatoly Karpov"],
-            "correct": "Gukesh Dommaraju"
-          },
-          {
-            "question": "Siapakah satu-satunya petinju dalam sejarah yang memenangkan gelar juara dunia dalam 8 divisi berbeda?",
-            "options": ["Floyd Mayweather", "Oscar De La Hoya", "Manny Pacquiao", "Sugar Ray Leonard"],
-            "correct": "Manny Pacquiao"
-          },
-          {
-            "question": "Berapa jumlah Grand Slam yang harus dimenangkan seorang pemain tenis untuk mencapai \"Golden Slam\" dalam satu tahun kalender?",
-            "options": ["4", "5", "6", "7"],
-            "correct": "5"
-          },
-          {
-            "question": "Siapakah pelatih sepak bola yang telah memenangkan Liga Champions UEFA dengan tiga klub berbeda?",
-            "options": ["Mircea Lucescu", "Jose Mourinho", "Carlo Ancelotti", "Pep Guardiola"],
-            "correct": "Carlo Ancelotti"
-          },
-          {
-            "question": "Siapa pemain tenis yang telah memenangkan keempat turnamen Grand Slam setidaknya dua kali di era Open?",
-            "options": ["Roger Federer", "Novak Djokovic", "Rafael Nadal", "Rod Laver"],
-            "correct": "Novak Djokovic"
-          }
-        ]
-      },
-      {
-        "name": "History",
-        "questions": [
-          {
-            "question": "Urutkan 3 Filsuf Yunani Kuno paling legendaris dari yang tertua hingga termuda",
-            "options": ["Plato - Sokrates - Aristoteles", "Sokrates - Aristoteles - Plato", "Aristoteles - Plato - Sokrates", "Sokrates - Plato - Aristoteles"],
-            "correct": "Sokrates - Plato - Aristoteles"
-          },
-          {
-            "question": "Siapa presiden Amerika Serikat yang memimpin selama Perang Saudara?",
-            "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Theodore Roosevelt"],
-            "correct": "Abraham Lincoln"
-          },
-          {
-            "question": "Dinasti mana yang memerintah China selama pembangunan Tembok Besar China?",
-            "options": ["Dinasti Ming","Dinasti Qing","Dinasti Han","Dinasti Qin"],
-            "correct": "Dinasti Qin" 
-          },
-          {
-            "question": "Siapa penjelajah Eropa pertama yang mencapai India melalui jalur laut?",
-            "options": ["Christopher Columbus","Vasco da Gama","Ferdinand Magellan","Marco Polo"],
-            "correct": "Vasco da Gama" 
-          },
-          {
-            "question": "Tanggal berapa Prabowo Subianto dilantik menjadi presiden?",
-            "options": ["19 Oktober 2024","20 Oktober 2024","21 November 2024","22 November 2024"],
-            "correct": "19 Oktober 2024" 
-          },
-          {
-            "question": "Kitab Negarakertagama yang menceritakan kejayaan Majapahit ditulis oleh",
-            "options": ["Mpu Tantular","Mpu Prapanca","Mpu Sendok","Hayam Wuruk"],
-            "correct": "Mpu Prapanca" 
-          },
-          {
-            "question": "Siapa tokoh yang pertama kali mengusulkan nama 'Indonesia' sebagai identitas nasional?",
-            "options": ["Ir. Soekarno","Dr. Soetomo","Ki Hajar Dewantara","Ernest Douwes Dekekr"],
-            "correct": "Ki Hajar Dewantara" 
-          },
-          {
-            "question": "Pada tahun berapakah VOC dibubarkan oleh pemerintah Belanda?",
-            "options": ["1799","1805","1811","1824"],
-            "correct": "1799" 
-          },
-          {
-            "question": "Sistem tanam paksa (Cultuurstelsel) diperkenalkan oleh",
-            "options": ["Jan Pieterszoon Coen","Van Heutsz","Van den Bosch","Van Deventer"],
-            "correct": "Van den Bosch" 
-          },
-          {
-            "question": "Peristiwa Bandung Lautan Api terjadi pada tahun.",
-            "options": ["1945","1946","1947","1948"],
-            "correct": "1946" 
-          },
-          {
-            "question": "Di bawah pemerintahan siapa Republik Romawi mengalami peralihan ke kekaisaran?",
-            "options": ["Julius Caesar", "Augustus", "Pompey", "Nerva"],
-            "correct": "Augustus"
-          }
-        ]
-      },
-      {
-        "name": "Basic Physics",
-        "questions": [
-          {
-            "question": "Hukum apa yang menyatakan bahwa tekanan gas berbanding terbalik dengan volume pada suhu konstan?",
-            "options": ["Hukum Boyle", "Hukum Charles", "Hukum Avogadro", "Hukum Gay-Lussac"],
-            "correct": "Hukum Boyle"
-          },
-          {
-            "question": "Apa yang terjadi dengan energi potensial gravitasi sebuah benda jika posisi benda tersebut dipindahkan ke tempat yang lebih tinggi dari permukaan bumi?",
-            "options": ["Energi potensial bertambah", "Energi potensial berkurang", "Energi potensial tetap", "Energi potensial menjadi nol"],
-            "correct": "Energi potensial bertambah"
-          },
-          {
-            "question": "Jika dua gaya yang bekerja pada benda berarah berlawanan, bagaimana cara kita menentukan resultan gaya yang bekerja?",
-            "options": ["Menjumlahkan kedua gaya", "Mengurangkan kedua gaya", "Menghitung perkalian kedua gaya", "Menjumlahkan gaya berdasarkan arah"],
-            "correct": "Mengurangkan kedua gaya"
-          },
-          {
-            "question": "Hukum Newton yang menyatakan bahwa gaya yang bekerja pada suatu benda sama dengan massa benda dikali percepatannya adalah hukum?",
-            "options": ["Hukum Newton I", "Hukum Newton II", "Hukum Newton III", "Hukum Gravitasi Universal"],
-            "correct": "Hukum Newton II"
-          },
-          {
-            "question": "Apa yang dimaksud dengan 'gaya sentripetal' dalam gerak melingkar?",
-            "options": ["Gaya yang mengarah ke luar dari pusat lingkaran", "Gaya yang mengarah ke pusat lingkaran", "Gaya yang menyebabkan percepatan linear", "Gaya yang terjadi pada benda yang diam"],
-            "correct": "Gaya yang mengarah ke pusat lingkaran"
-          },
-          {
-            "question": "Siapa yang mengembangkan teori heliosentris yang menyatakan bahwa Matahari adalah pusat tata surya?",
-            "options": ["Nikola Copernicus", "Isaac Newton", "Galileo Galilei", "Johannes Kepler"],
-            "correct": "Nikola Copernicus"
-          },
-          {
-            "question": "Siapa yang menemukan hukum gerak planet yang pertama kali, yang dikenal dengan hukum ellips?",
-            "options": ["Isaac Newton", "Galileo Galilei", "Johannes Kepler", "Nikolai Copernicus"],
-            "correct": "Johannes Kepler"
-          },
-          {
-            "question": "Apa nama hukum yang menyatakan bahwa tekanan suatu gas akan meningkat seiring dengan meningkatnya suhu, jika volume tetap konstan?",
-            "options": ["Hukum Boyle", "Hukum Charles", "Hukum Gay-Lussac", "Hukum Avogadro"],
-            "correct": "Hukum Gay-Lussac"
-          },
-          {
-            "question": "Apa nama fenomena yang terjadi ketika cahaya dari suatu sumber mengalami pembelokan akibat perbedaan kecepatan di media yang berbeda?",
-            "options": ["Refleksi", "Refraksi", "Difraksi", "Dispersi"],
-            "correct": "Refraksi"
-          },
-          {
-            "question": "Manakah dari berikut ini yang bukan merupakan jenis ikatan kimia?",
-            "options": ["Ikatan kovalen", "Ikatan ionik", "Ikatan logam", "Ikatan elektromagnetik"],
-            "correct": "Ikatan elektromagnetik"
-          },
-          {
-            "question": "Proses dekomposisi yang membentuk oksigen dari kalium klorat (KClO₃) dipengaruhi oleh?",
-            "options": ["Katalisator", "Temperatur", "Tekanan", "Jumlah reaktan"],
-            "correct": "Temperatur"
-          },
-          {
-            "question": "Hukum apa yang menyatakan bahwa volume gas berbanding lurus dengan suhu jika tekanan dan jumlah mol gas tetap konstan?",
-            "options": ["Hukum Boyle", "Hukum Charles", "Hukum Gay-Lussac", "Hukum Avogadro"],
-            "correct": "Hukum Charles"
-          }
-        ]
-      },
-      {
-        "name": "Basic Chemistry",
-        "questions": [
-          {
-            "question": "Apa nama partikel subatomik yang ditemukan oleh James Chadwick pada tahun 1932?",
-            "options": ["Elektron", "Proton", "Neutron", "Positron"],
-            "correct": "Neutron"
-          },
-          {
-            "question": "Apa nama unsur kimia yang memiliki nomor atom 92?",
-            "options": ["Uranium", "Plutonium", "Radium", "Thorium"],
-            "correct": "Uranium"
-          },
-          {
-            "question": "Apa nama unsur kimia yang memiliki nomor atom 6 dan merupakan elemen dasar kehidupan?",
-            "options": ["Oksigen", "Karbon", "Nitrogen", "Kalsium"],
-            "correct": "Karbon"
-          },
-          {
-            "question": "Siapa yang pertama kali mengemukakan teori atom modern yang menyatakan bahwa atom terdiri dari inti positif dan elektron yang mengorbit di sekitar inti?",
-            "options": ["J.J. Thomson", "Ernest Rutherford", "Niels Bohr", "John Dalton"],
-            "correct": "Ernest Rutherford"
-          },
-          {
-            "question": "Reaksi apa yang terjadi ketika inti atom dibelah menjadi dua inti yang lebih kecil, melepaskan energi besar?",
-            "options": ["Reaksi fusi", "Reaksi fisi", "Reaksi sublimasi", "Reaksi kondensasi"],
-            "correct": "Reaksi fisi"
-          },
-          {
-            "question": "Siapa yang menemukan elektron dan mengusulkan model atom 'plum pudding'?",
-            "options": ["J.J. Thomson", "Niels Bohr", "Ernest Rutherford", "Marie Curie"],
-            "correct": "J.J. Thomson"
-          },
-          {
-            "question": "Siapa yang pertama kali mengusulkan model atom dengan orbit elektron yang terkuantisasi?",
-            "options": ["Niels Bohr", "Ernest Rutherford", "Albert Einstein", "Werner Heisenberg"],
-            "correct": "Niels Bohr"
-          },
-          {
-            "question": "Reaksi fusi terjadi ketika dua inti ringan bergabung untuk membentuk inti yang lebih berat. Apa reaksi fusi terbesar yang terjadi di dalam bintang?",
-            "options": ["Fusi hidrogen menjadi helium", "Fusi karbon menjadi nitrogen", "Fusi helium menjadi oksigen", "Fusi besi menjadi nikel"],
-            "correct": "Fusi hidrogen menjadi helium"
-          },
-          {
-            "question": "Pada reaksi fisi uranium-235, inti uranium yang terbelah menghasilkan sejumlah besar energi dan beberapa partikel. Apa yang disebut partikel tersebut?",
-            "options": ["Positron", "Neutron", "Elektron", "Proton"],
-            "correct": "Neutron"
-          },
-          {
-            "question": "Bom atom yang pertama kali digunakan dalam perang dunia kedua adalah jenis bom?",
-            "options": ["Fusi", "Fisi", "Plasma", "Terbagi"],
-            "correct": "Fisi"
-          },
-          {
-            "question": "Reaksi yang terjadi dalam bom hidrogen adalah jenis reaksi?",
-            "options": ["Fusi", "Fisi", "Katalisis", "Redoks"],
-            "correct": "Fusi"
-          },
-          {
-            "question": "Siapa yang pertama kali memisahkan isotop uranium-235 untuk digunakan dalam reaksi fisi dalam program Manhattan?",
-            "options": ["Enrico Fermi", "Robert Oppenheimer", "Leo Szilard", "Niels Bohr"],
-            "correct": "Enrico Fermi"
-          }
-        ]
-      },
-      {
-        "name": "Economics and Business",
-        "questions": [
-          {
-            "question": "Siapa yang mengembangkan teori 'invisible hand' dalam ekonomi?",
-            "options": ["Adam Smith", "John Maynard Keynes", "Karl Marx", "Milton Friedman"],
-            "correct": "Adam Smith"
-          },
-          {
-            "question": "Apa yang dimaksud dengan 'Support' dalam analisis teknikal saham?",
-            "options": ["Titik harga tertinggi", "Titik harga terendah", "Titik harga stabil yang cenderung tidak turun", "Titik di mana volume saham meningkat"],
-            "correct": "Titik harga stabil yang cenderung tidak turun"
-          },
-          {
-            "question": "Teori ekonomi yang menyatakan bahwa pasar bebas akan membawa keseimbangan adalah teori?",
-            "options": ["Keynesian", "Monetarism", "Klasik", "Marxisme"],
-            "correct": "Klasik"
-          },
-          {
-            "question": "Menurut teori 'Keseimbangan Umum', siapa yang mempengaruhi harga pasar?",
-            "options": ["Pemerintah", "Konsumen dan produsen", "Perusahaan besar", "Investor institusional"],
-            "correct": "Konsumen dan produsen"
-          },
-          {
-            "question": "Apa itu 'Moving Average' dalam charting trading?",
-            "options": ["Rata-rata harga dalam periode tertentu", "Grafik harga yang menunjukkan tren", "Volume perdagangan", "Indikator volatilitas pasar"],
-            "correct": "Rata-rata harga dalam periode tertentu"
-          },
-          {
-            "question": "Teori ekonomi mana yang menyatakan bahwa permintaan akan barang dipengaruhi oleh tingkat pendapatan masyarakat?",
-            "options": ["Teori Keynesian", "Teori Marxis", "Teori Klasik", "Teori Monetarist"],
-            "correct": "Teori Keynesian"
-          },
-          {
-            "question": "Apa yang dimaksud dengan 'Resistance' dalam analisis teknikal saham?",
-            "options": ["Titik harga stabil yang cenderung tidak naik", "Titik harga stabil yang cenderung tidak turun", "Titik harga tertinggi yang tercapai", "Titik di mana permintaan menurun"],
-            "correct": "Titik harga stabil yang cenderung tidak naik"
-          },
-          {
-            "question": "Siapa yang mencetuskan teori 'Makroekonomi' untuk memerangi resesi besar pada tahun 1930-an?",
-            "options": ["Adam Smith", "Karl Marx", "John Maynard Keynes", "Friedrich Hayek"],
-            "correct": "John Maynard Keynes"
-          },
-          {
-            "question": "Apa itu 'Candlestick' dalam analisis charting?",
-            "options": ["Metode untuk menggambarkan pergerakan harga dalam periode tertentu", "Tipe grafik yang menunjukkan volume perdagangan", "Indikator ekonomi untuk mengukur inflasi", "Model perhitungan laba perusahaan"],
-            "correct": "Metode untuk menggambarkan pergerakan harga dalam periode tertentu"
-          },
-          {
-            "question": "Siapa yang dikenal sebagai bapak teori ekonomi mikro dan mengembangkan konsep 'marginal utility'?",
-            "options": ["David Ricardo", "Alfred Marshall", "Adam Smith", "John Maynard Keynes"],
-            "correct": "Alfred Marshall"
-          },
-          {
-            "question": "Apa yang dimaksud dengan 'Bubble Ekonomi' yang terjadi di Jepang pada akhir 1980-an?",
-            "options": ["Peningkatan harga saham secara tiba-tiba karena optimisme pasar", "Krisis utang negara yang menyebabkan inflasi tinggi", "Kenaikan harga properti yang didorong oleh permintaan yang tidak realistis", "Peningkatan besar dalam konsumsi barang mewah"],
-            "correct": "Kenaikan harga properti yang didorong oleh permintaan yang tidak realistis"
-          },
-          {
-            "question": "Salah satu perusahaan terbesar yang mengalami kebangkrutan pada tahun 2001, yang mengubah pandangan terhadap laporan keuangan dan audit, adalah?",
-            "options": ["General Motors", "Lehman Brothers", "Enron", "WorldCom"],
-            "correct": "Enron"
-          },
-          {
-            "question": "Siapa yang mengembangkan teori 'Laba Ekonomi' dalam konteks pasar persaingan sempurna?",
-            "options": ["Arthur Pigou", "Alfred Marshall", "David Ricardo", "Jean-Baptiste Say"],
-            "correct": "Alfred Marshall"
-          },
-          {
-            "question": "Pada tahun 1990-an, perusahaan teknologi apa yang pertama kali menggunakan IPO (Initial Public Offering) untuk memperkenalkan model bisnis berbasis internet?",
-            "options": ["Microsoft", "Amazon", "Netscape", "Google"],
-            "correct": "Netscape"
-          }
-        ]
-      }
+        {
+            "name": "IT",
+            "questions": [
+                {
+                    "question": "Pada tahun berapa sistem operasi Linux pertama kali dirilis?",
+                    "options": [
+                        "1989",
+                        "1991",
+                        "1995",
+                        "2000"
+                    ],
+                    "correct": "1991"
+                },
+                {
+                    "question": "def weird_func():\n    return \"Hello\" or \"World\"\nprint(weird_func())\nApa output dari kode berikut di Python?",
+                    "options": [
+                        "Hello",
+                        "World",
+                        "HelloWorld",
+                        "Error"
+                    ],
+                    "correct": "Hello"
+                },
+                {
+                    "question": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    ch := make(chan int, 1)\n    ch <- 42\n    fmt.Println(<-ch)\n    fmt.Println(<-ch)\n}\nApa output dari kode berikut?",
+                    "options": [
+                        "42\n0",
+                        "42\nruntime panic",
+                        "42\ndeadlock",
+                        "Compilation Error"
+                    ],
+                    "correct": "42\ndeadlock"
+                },
+                {
+                    "question": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    arr := [5]int{1, 2, 3, 4, 5}\n    s := arr[1:4]\n    fmt.Println(len(s), cap(s))\n}\nApa output dari kode berikut?",
+                    "options": [
+                        "3 3",
+                        "3 4",
+                        "3 5",
+                        "3 2"
+                    ],
+                    "correct": "3 4"
+                },
+                {
+                    "question": "func modify(s []int) {\n    s[0] = 99\n}\n\ns := []int{1, 2, 3}\nmodify(_____)\nfmt.Println(s[0])",
+                    "options": [
+                        "s[:]",
+                        "append([]int(nil), s...)",
+                        "&s",
+                        "s"
+                    ],
+                    "correct": "s"
+                },
+                {
+                    "question": "Manakah dibawah ini yang bukan merupakan Design Pattern dengan Behavioral Patterns",
+                    "options": [
+                        "Visitor",
+                        "State",
+                        "Adapter",
+                        "Strategy"
+                    ],
+                    "correct": "Adapter"
+                },
+                {
+                    "question": "Dalam konteks sistem terdistribusi, apa itu 'CAP Theorem'?",
+                    "options": [
+                        "Consistency, Authentication, Partition Tolerance",
+                        "Consistency, Authentication, Persistent",
+                        "Consistency, Accountability, Partition Tolerance",
+                        "Consistency, Availability, Partition Tolerance"
+                    ],
+                    "correct": "Consistency, Availability, Partition Tolerance"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'monads' dalam pemrograman fungsional?",
+                    "options": [
+                        "Struktur data untuk menyimpan nilai",
+                        "Pola desain untuk menangani side effects dan operasi komputasi berurutan",
+                        "Algoritma untuk pencarian dalam grafik",
+                        "Bahasa pemrograman yang didesain untuk menghitung nilai dalam logika predikat"
+                    ],
+                    "correct": "Pola desain untuk menangani side effects dan operasi komputasi berurutan"
+                },
+                {
+                    "question": "Dalam teori kompleksitas algoritma, apa yang dimaksud dengan 'NP-complete'?",
+                    "options": [
+                        "Kelas masalah yang dapat diselesaikan dalam waktu polinomial dengan algoritma yang efisien",
+                        "Kelas masalah yang hanya dapat diselesaikan dengan algoritma non-deterministik dalam waktu polinomial",
+                        "Kelas masalah yang tidak dapat diselesaikan dalam waktu polinomial, bahkan dengan algoritma yang sangat efisien",
+                        "Kelas masalah yang dapat diselesaikan dalam waktu polinomial, tetapi memerlukan ruang yang sangat besar"
+                    ],
+                    "correct": "Kelas masalah yang hanya dapat diselesaikan dengan algoritma non-deterministik dalam waktu polinomial"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'Turing Completeness'?",
+                    "options": [
+                        "Kemampuan sebuah mesin atau bahasa pemrograman untuk menyelesaikan tugas-tugas yang dapat diselesaikan oleh komputer klasik",
+                        "Kemampuan sebuah sistem untuk mensimulasikan algoritma dari mesin Turing",
+                        "Kemampuan bahasa pemrograman untuk memecahkan masalah dalam waktu konstan",
+                        "Kemampuan komputer untuk menangani operasi yang melibatkan banyak dimensi"
+                    ],
+                    "correct": "Kemampuan sebuah sistem untuk mensimulasikan algoritma dari mesin Turing"
+                },
+                {
+                    "question": "Apa kepanjangan dari 'BGP' dalam konteks jaringan komputer?",
+                    "options": [
+                        "Basic Gateway Protocol",
+                        "Border Gateway Protocol",
+                        "Binary Gateway Protocol",
+                        "Broadband Gateway Protocol"
+                    ],
+                    "correct": "Border Gateway Protocol"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'RAID' dalam sistem penyimpanan data?",
+                    "options": [
+                        "Redundant Array of Independent Disks",
+                        "Random Access Independent Disks",
+                        " Redundant Array of Integrated Devices",
+                        "Remote Array of Integrated Disks"
+                    ],
+                    "correct": "Redundant Array of Independent Disks"
+                },
+                {
+                    "question": "Apa kepanjangan dari 'RAID 0' dalam teknologi penyimpanan data?",
+                    "options": [
+                        "Redundant Array of Independent Disks - Zero",
+                        "Random Array of Independent Disks - Optimized",
+                        "Redundant Array of Independent Disks - Distributed",
+                        "Redundant Array of Independent Disks - Striped"
+                    ],
+                    "correct": "Redundant Array of Independent Disks - Striped"
+                },
+                {
+                    "question": "Dalam arsitektur komputer, apa yang dimaksud dengan 'Von Neumann Bottleneck'?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Keterbatasan kecepatan CPU dalam memproses instruksi",
+                        "Keterbatasan bandwidth antara CPU dan memori",
+                        "Kelebihan data dalam RAM yang menyebabkan crash",
+                        "Ketidakseimbangan antara daya CPU dan GPU"
+                    ],
+                    "correct": "Keterbatasan bandwidth antara CPU dan memori"
+                },
+                {
+                    "question": "Manakah algoritma yang digunakan dalam kompresi gambar format JPEG?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Huffman Coding",
+                        "Lempel-Ziv-Welch (LZW)",
+                        "Discrete Cosine Transform (DCT)",
+                        "Fast Fourier Transform (FFT)"
+                    ],
+                    "correct": "Discrete Cosine Transform (DCT)"
+                },
+                {
+                    "question": "Manakah dari berikut yang merupakan protokol routing dinamis?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "HTTP",
+                        "FTP",
+                        "RIP",
+                        "SSL"
+                    ],
+                    "correct": "RIP"
+                },
+                {
+                    "question": "Dalam konteks blockchain, apa yang dimaksud dengan '51% attack'?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Serangan di mana 51% dari semua pengguna di jaringan diblokir",
+                        "Serangan di mana lebih dari 51% node mengontrol jaringan dan dapat memanipulasi transaksi",
+                        "Serangan phishing yang menargetkan 51% dari pengguna cryptocurrency",
+                        "Serangan brute force pada enkripsi blockchain"
+                    ],
+                    "correct": "Serangan di mana lebih dari 51% node mengontrol jaringan dan dapat memanipulasi transaksi"
+                },
+                {
+                    "question": "Apa tujuan utama dari protokol 'BGP' dalam jaringan internet?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Mengatur lalu lintas antara jaringan yang berbeda",
+                        "Mempercepat pengiriman paket data",
+                        "Mengenkripsi data dalam transit",
+                        "Mengatur akses pengguna ke jaringan Wi-Fi"
+                    ],
+                    "correct": "Mengatur lalu lintas antara jaringan yang berbeda"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'quantum supremacy' dalam komputasi?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Ketika komputer kuantum dapat melakukan perhitungan yang tidak bisa dilakukan oleh komputer klasik dalam waktu yang wajar",
+                        "Ketika komputer kuantum menggantikan semua komputer klasik",
+                        "Ketika algoritma enkripsi berbasis kuantum tidak bisa diretas",
+                        "Ketika partikel kuantum digunakan untuk menyimpan informasi dalam jumlah tak terbatas"
+                    ],
+                    "correct": "Ketika komputer kuantum dapat melakukan perhitungan yang tidak bisa dilakukan oleh komputer klasik dalam waktu yang wajar"
+                },
+                {
+                    "question": "Apa yang terjadi jika terjadi kondisi 'race condition' dalam pemrograman paralel?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Sistem menjadi lebih cepat karena eksekusi simultan",
+                        "Dua atau lebih proses bersaing untuk mendapatkan sumber daya yang sama, menyebabkan hasil yang tidak terduga",
+                        "CPU overheat karena terlalu banyak tugas dijalankan bersamaan",
+                        "Kode program menjadi lebih efisien karena banyak tugas diselesaikan secara paralel"
+                    ],
+                    "correct": "Dua atau lebih proses bersaing untuk mendapatkan sumber daya yang sama, menyebabkan hasil yang tidak terduga"
+                },
+                {
+                    "question": "Apa fungsi utama dari register 'stack pointer' dalam arsitektur CPU?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Menunjukkan lokasi instruksi berikutnya yang akan dieksekusi",
+                        "Menunjukkan alamat data terakhir yang dimasukkan ke dalam stack",
+                        "Menyimpan data sementara sebelum diproses oleh CPU",
+                        "Mengontrol aliran data antara CPU dan RAM"
+                    ],
+                    "correct": "Menunjukkan alamat data terakhir yang dimasukkan ke dalam stack"
+                },
+                {
+                    "question": "Dalam keamanan siber, apa perbedaan utama antara serangan 'phishing' dan 'spear phishing'?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Phishing menargetkan individu secara acak, sedangkan spear phishing menargetkan individu atau organisasi tertentu",
+                        "Spear phishing dilakukan melalui email, sementara phishing dilakukan melalui media sosial",
+                        "Phishing lebih berbahaya daripada spear phishing",
+                        "Phishing hanya menargetkan akun media sosial, sedangkan spear phishing menargetkan bank"
+                    ],
+                    "correct": "Phishing menargetkan individu secara acak, sedangkan spear phishing menargetkan individu atau organisasi tertentu"
+                },
+                {
+                    "question": "Manakah dari berikut yang merupakan kerangka kerja (framework) untuk pengembangan aplikasi berbasis microservices?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Django",
+                        "Spring Boot",
+                        "Bootstrap",
+                        "jQuery"
+                    ],
+                    "correct": "Spring Boot"
+                }
+            ]
+        },
+        {
+            "name": "Geography",
+            "questions": [
+                {
+                    "question": "Negara dengan jumlah pulau terbanyak di dunia adalah?",
+                    "options": [
+                        "Filipina",
+                        "Indonesia",
+                        "Swedia",
+                        "Jepang"
+                    ],
+                    "correct": "Swedia"
+                },
+                {
+                    "question": "Ibukota negara Mongolia adalah?",
+                    "options": [
+                        "Tashkent",
+                        "Ulaanbaatar",
+                        "Astana",
+                        "Bishkek"
+                    ],
+                    "correct": "Ulaanbaatar"
+                },
+                {
+                    "question": "Gunung tertinggi di Eropa berada di negara mana?",
+                    "options": [
+                        "Prancis",
+                        "Swiss",
+                        "Rusia",
+                        "Italia"
+                    ],
+                    "correct": "Rusia"
+                },
+                {
+                    "question": "Negara mana yang memiliki zona waktu terbanyak?",
+                    "options": [
+                        "Rusia",
+                        "Finlandia",
+                        "Prancis",
+                        "Kanada"
+                    ],
+                    "correct": "Prancis"
+                },
+                {
+                    "question": "Apa ibu kota dari Australia?",
+                    "options": [
+                        "Sydney",
+                        "Canberra",
+                        "Melbourne",
+                        "Perth"
+                    ],
+                    "correct": "Canberra"
+                },
+                {
+                    "question": "Apa ibu kota dari Brasil?",
+                    "options": [
+                        "Sao Paulo",
+                        "Rio de Janeiro",
+                        "Brasilia",
+                        "Salvador"
+                    ],
+                    "correct": "Brasilia"
+                },
+                {
+                    "question": "Apa ibu kota dari Kazakhstan?",
+                    "options": [
+                        "Astana",
+                        "Almaty",
+                        "Bishkek",
+                        "Tashkent"
+                    ],
+                    "correct": "Astana"
+                },
+                {
+                    "question": "Ibu kota negara manakah yang bernama Dodoma?",
+                    "options": [
+                        "Tanzania",
+                        "Zimbabwe",
+                        "Namibia",
+                        "Uganda"
+                    ],
+                    "correct": "Tanzania"
+                },
+                {
+                    "question": "Ibu kota negara manakah yang bernama Yamoussoukro?",
+                    "options": [
+                        "Kamerun",
+                        "Pantai Gading",
+                        "Burkina Faso",
+                        "Gabon"
+                    ],
+                    "correct": "Pantai Gading"
+                },
+                {
+                    "question": "Negara mana yang memiliki ibu kota bernama N'Djamena?",
+                    "options": [
+                        "Niger",
+                        "Chad",
+                        "Sudan Selatan",
+                        "Mauritania"
+                    ],
+                    "correct": "Chad"
+                },
+                {
+                    "question": "Laut apa yang terletak di antara semenanjung Italia dan benua Eropa?",
+                    "options": [
+                        "Laut Mediterania",
+                        "Laut Adriatik",
+                        "Laut Aegea",
+                        "Laut Karibia"
+                    ],
+                    "correct": "Laut Adriatik"
+                },
+                {
+                    "question": "Di negara mana terletak danau paling dalam di dunia, Danau Baikal?",
+                    "options": [
+                        "Kazakhstan",
+                        "Rusia",
+                        "Mongolia",
+                        "China"
+                    ],
+                    "correct": "Rusia"
+                },
+                {
+                    "question": "Apa nama sungai yang mengalir melalui kota Paris?",
+                    "options": [
+                        "Sungai Thames",
+                        "Sungai Danube",
+                        "Sungai Seine",
+                        "Sungai Loire"
+                    ],
+                    "correct": "Sungai Seine"
+                },
+                {
+                    "question": "Benua manakah yang memiliki jumlah negara terbanyak?",
+                    "options": [
+                        "Afrika",
+                        "Asia",
+                        "Eropa",
+                        "Amerika"
+                    ],
+                    "correct": "Afrika"
+                },
+                {
+                    "question": "Apa nama sungai terpanjang di dunia?",
+                    "options": [
+                        "Amazon",
+                        "Nil",
+                        "Yangtze",
+                        "Mississippi"
+                    ],
+                    "correct": "Nil"
+                }
+            ]
+        },
+        {
+            "name": "Arts",
+            "questions": [
+                {
+                    "question": "Siapa penulis novel '1984'?",
+                    "options": [
+                        "Aldous Huxley",
+                        "George Orwell",
+                        "Ray Bradbury",
+                        "Margaret Atwood"
+                    ],
+                    "correct": "George Orwell"
+                },
+                {
+                    "question": "Siapa pengarang novel 'The Great Gatsby'?",
+                    "options": [
+                        "Ernest Hemingway",
+                        "F. Scott Fitzgerald",
+                        "John Steinbeck",
+                        "William Faulkner"
+                    ],
+                    "correct": "F. Scott Fitzgerald"
+                },
+                {
+                    "question": "Siapa penyanyi yang terkenal dengan lagu 'Like a Rolling Stone' dan dijuluki 'Bob Dylan'?",
+                    "options": [
+                        "Bruce Springsteen",
+                        "Bob Dylan",
+                        "Johnny Cash",
+                        "Elvis Presley"
+                    ],
+                    "correct": "Bob Dylan"
+                },
+                {
+                    "question": "Film apa yang memenangkan Academy Award untuk Film Terbaik pada tahun 1994?",
+                    "options": [
+                        "The Shawshank Redemption",
+                        "Pulp Fiction",
+                        "Forrest Gump",
+                        "The Godfather"
+                    ],
+                    "correct": "Forrest Gump"
+                },
+                {
+                    "question": "Film 'Avengers: Endgame' dirilis pada tahun?",
+                    "options": [
+                        "2018",
+                        "2019",
+                        "2020",
+                        "2021"
+                    ],
+                    "correct": "2019"
+                },
+                {
+                    "question": "Siapa sutradara yang mengarahkan film 'Mad Max: Fury Road' (2015), yang memenangkan 6 Oscar?",
+                    "options": [
+                        "George Miller",
+                        "James Cameron",
+                        "Ridley Scott",
+                        "Peter Jackson"
+                    ],
+                    "correct": "George Miller"
+                },
+                {
+                    "question": "Dalam film 'The Revenant' (2015), siapa yang memenangkan Oscar sebagai Aktor Terbaik untuk perannya sebagai Hugh Glass?",
+                    "options": [
+                        "Matthew McConaughey",
+                        "Leonardo DiCaprio",
+                        "Tom Hardy",
+                        "Christian Bale"
+                    ],
+                    "correct": "Leonardo DiCaprio"
+                },
+                {
+                    "question": "Siapa sutradara film 'The Shape of Water' (2017), yang meraih Oscar untuk Film Terbaik?",
+                    "options": [
+                        "Guillermo del Toro",
+                        "Tim Burton",
+                        "Steven Spielberg",
+                        "Martin Scorsese"
+                    ],
+                    "correct": "Guillermo del Toro"
+                },
+                {
+                    "question": "Film 'Parasite' (2019) menjadi film non-Bahasa Inggris pertama yang memenangkan Oscar Film Terbaik. Siapa sutradara film ini?",
+                    "options": [
+                        "Bong Joon-ho",
+                        "Park Chan-wook",
+                        "Lee Chang-dong",
+                        "Kim Ki-duk"
+                    ],
+                    "correct": "Bong Joon-ho"
+                },
+                {
+                    "question": "Film 'The Lion King' (2019) adalah versi live-action dari film animasi tahun berapa?",
+                    "options": [
+                        "1989",
+                        "1994",
+                        "2001",
+                        "2010"
+                    ],
+                    "correct": "1994"
+                },
+                {
+                    "question": "Dalam film 'No Time to Die' (2021), siapa yang terakhir kali berperan sebagai James Bond sebelum Daniel Craig?",
+                    "options": [
+                        "Pierce Brosnan",
+                        "Sean Connery",
+                        "Roger Moore",
+                        "Timothy Dalton"
+                    ],
+                    "correct": "Pierce Brosnan"
+                },
+                {
+                    "question": "Siapa yang memenangkan penghargaan Best Actress di Oscar 2021 untuk perannya dalam film 'Nomadland'?",
+                    "options": [
+                        "Frances McDormand",
+                        "Viola Davis",
+                        "Andra Day",
+                        "Carey Mulligan"
+                    ],
+                    "correct": "Frances McDormand"
+                }
+            ]
+        },
+        {
+            "name": "Math",
+            "questions": [
+                {
+                    "question": "Sebuah tim pekerja konstruksi membutuhkan waktu 10 hari untuk menyelesaikan sebuah proyek jika dikerjakan oleh 6 orang. Jika jumlah pekerja ditambah menjadi 15 orang, berapa hari yang dibutuhkan untuk menyelesaikan proyek yang sama, dengan asumsi setiap pekerja memiliki tingkat kerja yang sama?",
+                    "options": [
+                        "4 hari",
+                        "6 hari",
+                        "8 hari",
+                        "5 hari"
+                    ],
+                    "correct": "4 hari"
+                },
+                {
+                    "question": "Tujuh tahun lalu, usia Ayah 4 kali usia anaknya.\nSekarang, usia Ayah dua kali usia anaknya.\nBerapa usia Ayah saat ini?",
+                    "options": [
+                        "28",
+                        "30",
+                        "32",
+                        "35"
+                    ],
+                    "correct": "30"
+                },
+                {
+                    "question": "Sebuah perusahaan memiliki 100 karyawan. Saat ini, 99% dari mereka telah menyelesaikan pelatihan sertifikasi khusus. Manajemen ingin menurunkan persentase ini menjadi 98% dengan mengurangi jumlah karyawan yang telah bersertifikasi. Berapa banyak karyawan bersertifikasi yang harus dikeluarkan dari perusahaan agar persentase turun menjadi 98%?",
+                    "type": "input",
+                    "correct": "50"
+                },
+                {
+                    "question": "Sebuah perusahaan menginvestasikan Rp 5.000.000 pada proyek dengan tingkat pengembalian 10% per tahun. Berapa nilai investasi tersebut setelah 3 tahun?",
+                    "options": [
+                        "Rp 6.500.000",
+                        "Rp 7.000.000",
+                        "Rp 7.500.000",
+                        "Rp 8.000.000"
+                    ],
+                    "correct": "Rp 6.650.000"
+                },
+                {
+                    "question": "Dalam sebuah pertandingan, seorang pemain memenangkan 70% dari 200 pertandingan yang dimainkan. Jika ia kehilangan 25% dari sisa pertandingan, berapa banyak pertandingan yang dia menangkan dan kalah?",
+                    "options": [
+                        "140 menang, 50 kalah",
+                        "140 menang, 60 kalah",
+                        "150 menang, 50 kalah",
+                        "150 menang, 60 kalah"
+                    ],
+                    "correct": "140 menang, 60 kalah"
+                },
+                {
+                    "question": "Jika suatu barang mengalami kenaikan harga 15% dan harga baru barang tersebut menjadi Rp 460.000, berapakah harga awal barang tersebut?",
+                    "options": [
+                        "Rp 400.000",
+                        "Rp 450.000",
+                        "Rp 425.000",
+                        "Rp 440.000"
+                    ],
+                    "correct": "Rp 400.000"
+                },
+                {
+                    "question": "Sebuah kotak berisi 5 bola merah, 3 bola biru, dan 2 bola hijau. Jika 3 bola diambil secara acak, berapa peluang untuk mengambil 2 bola merah dan 1 bola biru?",
+                    "options": [
+                        "5/56",
+                        "15/56",
+                        "10/56",
+                        "3/56"
+                    ],
+                    "correct": "15/56"
+                },
+                {
+                    "question": "Dari 8 orang yang akan dipilih menjadi ketua dan wakil ketua dalam sebuah organisasi, berapa banyak cara yang dapat dilakukan untuk memilih ketua dan wakil ketua?",
+                    "options": [
+                        "56",
+                        "64",
+                        "72",
+                        "80"
+                    ],
+                    "correct": "56"
+                },
+                {
+                    "question": "Dari 10 buku yang tersedia, 4 di antaranya adalah buku matematika. Jika 3 buku dipilih secara acak, berapa banyak cara untuk memilih 2 buku matematika dan 1 buku non-matematika?",
+                    "options": [
+                        "84",
+                        "90",
+                        "96",
+                        "100"
+                    ],
+                    "correct": "84"
+                },
+                {
+                    "question": "Dalam sebuah lomba, terdapat 6 peserta yang akan dipilih untuk menduduki 3 posisi teratas (juara 1, 2, dan 3). Berapa banyak cara untuk memilih pemenang lomba tersebut?",
+                    "options": [
+                        "120",
+                        "100",
+                        "90",
+                        "80"
+                    ],
+                    "correct": "120"
+                },
+                {
+                    "question": "Jika sebuah kotak berisi 10 bola, terdiri dari 4 bola merah, 3 bola biru, dan 3 bola hijau, berapa banyak cara untuk memilih 4 bola secara acak jika bola yang dipilih harus terdiri dari 2 bola merah, 1 bola biru, dan 1 bola hijau?",
+                    "options": [
+                        "150",
+                        "175",
+                        "180",
+                        "200"
+                    ],
+                    "correct": "150"
+                },
+                {
+                    "question": "Seorang petani memiliki 10 ekor ayam. Setiap ayam bertelur 2 butir setiap hari. Dalam 5 hari, berapa total telur yang dihasilkan?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "50",
+                        "100",
+                        "60",
+                        "40"
+                    ],
+                    "correct": "100"
+                },
+                {
+                    "question": "Jika 5 mesin dapat menghasilkan 5 barang dalam 5 menit, berapa banyak barang yang dapat dihasilkan oleh 100 mesin dalam 100 menit?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "1000",
+                        "2000",
+                        "500",
+                        "4000"
+                    ],
+                    "correct": "2000"
+                },
+                {
+                    "question": "Sebuah jam menunjukkan pukul 3:15. Jika jarum jam berputar 90 derajat searah jarum jam, sekarang pukul berapa?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "6:15",
+                        "3:45",
+                        "5:15",
+                        "4:45"
+                    ],
+                    "correct": "5:15"
+                },
+                {
+                    "question": "Ali memiliki Rp150.000. Ia membeli dua buku seharga Rp45.000 masing-masing dan satu pensil seharga Rp10.000. Berapa uang yang tersisa?",
+                    "type": "input",
+                    "correct": "50.000"
+                },
+                {
+                    "question": "Sebuah segitiga memiliki tiga sisi dengan panjang 5 cm, 12 cm, dan 13 cm. Apakah ini segitiga siku-siku?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Ya",
+                        "Tidak"
+                    ],
+                    "correct": "Ya"
+                },
+                {
+                    "question": "Dalam sebuah lomba lari, kamu menyalip orang yang berada di posisi kedua. Sekarang kamu berada di posisi berapa?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Pertama",
+                        "Kedua",
+                        "Ketiga",
+                        "Keempat"
+                    ],
+                    "correct": "Kedua"
+                },
+                {
+                    "question": "Sebuah toko menawarkan diskon 25% untuk semua barang. Jika harga asli sebuah jaket adalah Rp400.000, berapa harga setelah diskon?",
+                    "type": "input",
+                    "correct": "300.000"
+                },
+                {
+                    "question": "Seorang penjual memiliki 40 jeruk. Setiap pelanggan membeli 1/4 dari jeruk yang tersisa. Setelah tiga pelanggan membeli, berapa jeruk yang tersisa?",
+                    "type": "input",
+                    "correct": "16"
+                },
+                {
+                    "question": "Dian berlari mengelilingi lapangan yang berbentuk persegi dengan panjang sisi 50 meter. Jika ia berlari 3 putaran penuh, berapa meter yang sudah ditempuh?",
+                    "type": "input",
+                    "correct": "600"
+                },
+                {
+                    "question": "Jika dua angka ditambahkan hasilnya 50, dan angka yang lebih besar adalah tiga kali angka yang lebih kecil, berapa angka yang lebih kecil?",
+                    "type": "input",
+                    "correct": "12.5"
+                }
+            ]
+        },
+        {
+            "name": "Food",
+            "questions": [
+                {
+                    "question": "Makanan apa yang berasal dari Prancis dan terbuat dari adonan yang dilipat berkali-kali?",
+                    "options": [
+                        "Croissant",
+                        "Baguette",
+                        "Éclair",
+                        "Macaron"
+                    ],
+                    "correct": "Croissant"
+                },
+                {
+                    "question": "Mana makanan yang bukan berbahan dasar tepung beras?",
+                    "options": [
+                        "Klepon",
+                        "Putu Mayang",
+                        "Kue Cubit",
+                        "Lapis Legit"
+                    ],
+                    "correct": "Souvlaki"
+                },
+                {
+                    "question": "Pilih makanan yang bukan berasal dari Jepang!",
+                    "options": [
+                        "Okonomiyaki",
+                        "Kimchi",
+                        "Yakitori",
+                        "Takoyaki"
+                    ],
+                    "correct": "Kimchi"
+                },
+                {
+                    "question": "Mana yang bukan makanan khas Betawi?",
+                    "options": [
+                        "Kerak Telor",
+                        "Soto Betawi",
+                        "Nasi Uduk",
+                        "Gado-Gado"
+                    ],
+                    "correct": "Gado-Gado"
+                },
+                {
+                    "question": "Mana makanan yang bisa dimakan mentah?",
+                    "options": [
+                        "Gado-Gado",
+                        "Tahu Bulat",
+                        "Nasi Uduk",
+                        "Rujak Buah"
+                    ],
+                    "correct": "Rujak Buah"
+                },
+                {
+                    "question": "Makanan khas dari daerah Ambon yang terbuat dari ikan cakalang yang disajikan dengan sambal colo-colo adalah?",
+                    "options": [
+                        "Ikan Bakar Cakalang",
+                        "Ikan Cakalang Fufu",
+                        "Ikan Tudeh",
+                        "Ikan Woku"
+                    ],
+                    "correct": "Ikan Cakalang Fufu"
+                },
+                {
+                    "question": "Makanan khas yang terbuat dari ketan, kelapa parut, dan gula merah, biasanya dibungkus dengan daun pisang, disebut?",
+                    "options": [
+                        "Lapis legit",
+                        "Klepon",
+                        "Lontong",
+                        "Serabi"
+                    ],
+                    "correct": "Klepon"
+                },
+                {
+                    "question": "Salah satu rempah yang digunakan untuk memberikan aroma dan rasa khas pada masakan Indonesia, terutama pada nasi goreng dan soto, adalah?",
+                    "options": [
+                        "Kalamak",
+                        "Kunyit",
+                        "Ketumbar",
+                        "Sereh"
+                    ],
+                    "correct": "Kunyit"
+                },
+                {
+                    "question": "Kunci utama dari rasa khas rendang berasal dari bumbu yang dimasak bersama santan dan rempah-rempah. Salah satu rempah utama yang digunakan adalah?",
+                    "options": [
+                        "Cengkeh",
+                        "Kunyit",
+                        "Jahe",
+                        "Lada"
+                    ],
+                    "correct": "Cengkeh"
+                }
+            ]
+        },
+        {
+            "name": "Pengetahuan Umum",
+            "questions": [
+                {
+                    "question": "Negara mana yang memiliki GDP (PDB) tertinggi di dunia pada tahun 2024?",
+                    "options": [
+                        "China",
+                        "Jepang",
+                        "Jerman",
+                        "Amerika Serikat"
+                    ],
+                    "correct": "Amerika Serikat"
+                },
+                {
+                    "question": "Negara mana yang memiliki ekonomi terbesar di Eropa?",
+                    "options": [
+                        "Prancis",
+                        "Jerman",
+                        "Inggris",
+                        "Italia"
+                    ],
+                    "correct": "Jerman"
+                },
+                {
+                    "question": "Apa nama ibukota negara Kanada?",
+                    "options": [
+                        "Ottawa",
+                        "Toronto",
+                        "Vancouver",
+                        "Montreal"
+                    ],
+                    "correct": "Ottawa"
+                },
+                {
+                    "question": "Siapa yang menjadi wali kota pertama Jakarta setelah kemerdekaan Indonesia?",
+                    "options": [
+                        "Ali Sadikin",
+                        "Sutiyoso",
+                        "Abdurrahman Baswedan",
+                        "Soemarno"
+                    ],
+                    "correct": "Soemarno"
+                },
+                {
+                    "question": "Ibukota negara manakah yang memiliki jumlah huruf terbanyak dalam ejaan resminya?",
+                    "options": [
+                        "Bangkok, Thailand",
+                        "Sri Jayawardenepura Kotte, Sri Lanka",
+                        "Washington D.C., Amerika Serikat",
+                        "Phnom Penh, Kamboja"
+                    ],
+                    "correct": "Bangkok, Thailand"
+                },
+                {
+                    "question": "Negara mana yang pernah memiliki walikota seekor kucing?",
+                    "options": [
+                        "Kenya",
+                        "Amerika Serikat",
+                        "New Caledonia",
+                        "Guatemala"
+                    ],
+                    "correct": "Amerika Serikat"
+                },
+                {
+                    "question": "Plat nomor KT berasal dari provinsi mana?",
+                    "options": [
+                        "Kalimantan Timur",
+                        "Kalimantan Tengah",
+                        "Kalimantan Selatan",
+                        "Kalimantan Barat"
+                    ],
+                    "correct": "Kalimantan Timur"
+                },
+                {
+                    "question": "Jika Anda melihat kendaraan dengan plat nomor \"Z\", kendaraan tersebut berasal dari mana?",
+                    "options": [
+                        "Tasikmalaya",
+                        "Garut",
+                        "Cirebon",
+                        "Sukabumi"
+                    ],
+                    "correct": "Tasikmalaya"
+                },
+                {
+                    "question": "Plat nomor \"DB\" digunakan di daerah mana?",
+                    "options": [
+                        "Sulawesi Utara",
+                        "Gorontalo",
+                        "Sulawesi Tengah",
+                        "Sulawesi Selatan"
+                    ],
+                    "correct": "Sulawesi Utara"
+                },
+                {
+                    "question": "Kode plat nomor \"EA\" digunakan untuk kendaraan dari provinsi mana?",
+                    "options": [
+                        "Gorontalo",
+                        "Nusa Tenggara Barat",
+                        "Nusa Tenggara Timur",
+                        "Maluku"
+                    ],
+                    "correct": "Nusa Tenggara Barat"
+                },
+                {
+                    "question": "Pada tahun berapa Jakarta secara resmi berganti nama dari Batavia menjadi Jakarta?",
+                    "options": [
+                        "1945",
+                        "1949",
+                        "1960",
+                        "1972"
+                    ],
+                    "correct": "1949"
+                }
+            ]
+        },
+        {
+            "name": "Sports",
+            "questions": [
+                {
+                    "question": "Siapa pemain tenis putra yang memenangkan French Open terbanyak dalam sejarah?",
+                    "options": [
+                        "Roger Federer",
+                        "Novak Djokovic",
+                        "Bjorn Borg",
+                        "Rafael Nadal"
+                    ],
+                    "correct": "Rafael Nadal"
+                },
+                {
+                    "question": "Siapa pemain bulu tangkis Indonesia yang memenangkan medali emas Olimpiade pertama untuk Indonesia?",
+                    "options": [
+                        "Susi Susanti",
+                        "Taufik Hidayat",
+                        "Alan Budikusuma",
+                        "Rudy Hartono"
+                    ],
+                    "correct": "Alan Budikusuma"
+                },
+                {
+                    "question": "Tim mana yang memenangkan gelar NBA pertama pada tahun 1947?",
+                    "options": [
+                        "Boston Celtics",
+                        "Minneapolis Lakers",
+                        "Philadelphia Warriors",
+                        "New York Knicks"
+                    ],
+                    "correct": "Philadelphia Warriors"
+                },
+                {
+                    "question": "Dalam Formula 1, tim manakah yang memiliki jumlah gelar juara dunia konstruktor terbanyak?",
+                    "options": [
+                        "Red Bull Racing",
+                        "Mercedes-AMG Petronas",
+                        "Scuderia Ferrari",
+                        "McLaren"
+                    ],
+                    "correct": "Scuderia Ferrari"
+                },
+                {
+                    "question": "Dalam sejarah Piala Dunia FIFA, hanya ada satu negara yang pernah memenangkan turnamen tanpa kebobolan satu gol pun. Negara manakah itu?",
+                    "options": [
+                        "Brazil",
+                        "Italia",
+                        "Uruguay",
+                        "Prancis"
+                    ],
+                    "correct": "Uruguay"
+                },
+                {
+                    "question": "Dalam dunia catur, siapa yang menjadi juara dunia termuda sepanjang sejarah?",
+                    "options": [
+                        "Magnus Carlsen",
+                        "Gukesh Dommaraju",
+                        "Garry Kasparov",
+                        "Anatoly Karpov"
+                    ],
+                    "correct": "Gukesh Dommaraju"
+                },
+                {
+                    "question": "Siapakah satu-satunya petinju dalam sejarah yang memenangkan gelar juara dunia dalam 8 divisi berbeda?",
+                    "options": [
+                        "Floyd Mayweather",
+                        "Oscar De La Hoya",
+                        "Manny Pacquiao",
+                        "Sugar Ray Leonard"
+                    ],
+                    "correct": "Manny Pacquiao"
+                },
+                {
+                    "question": "Berapa jumlah Grand Slam yang harus dimenangkan seorang pemain tenis untuk mencapai \"Golden Slam\" dalam satu tahun kalender?",
+                    "options": [
+                        "4",
+                        "5",
+                        "6",
+                        "7"
+                    ],
+                    "correct": "5"
+                },
+                {
+                    "question": "Siapakah pelatih sepak bola yang telah memenangkan Liga Champions UEFA dengan tiga klub berbeda?",
+                    "options": [
+                        "Mircea Lucescu",
+                        "Jose Mourinho",
+                        "Carlo Ancelotti",
+                        "Pep Guardiola"
+                    ],
+                    "correct": "Carlo Ancelotti"
+                },
+                {
+                    "question": "Siapa pemain tenis yang telah memenangkan keempat turnamen Grand Slam setidaknya dua kali di era Open?",
+                    "options": [
+                        "Roger Federer",
+                        "Novak Djokovic",
+                        "Rafael Nadal",
+                        "Rod Laver"
+                    ],
+                    "correct": "Novak Djokovic"
+                }
+            ]
+        },
+        {
+            "name": "History",
+            "questions": [
+                {
+                    "question": "Urutkan 3 Filsuf Yunani Kuno paling legendaris dari yang tertua hingga termuda",
+                    "options": [
+                        "Plato - Sokrates - Aristoteles",
+                        "Sokrates - Aristoteles - Plato",
+                        "Aristoteles - Plato - Sokrates",
+                        "Sokrates - Plato - Aristoteles"
+                    ],
+                    "correct": "Sokrates - Plato - Aristoteles"
+                },
+                {
+                    "question": "Siapa presiden Amerika Serikat yang memimpin selama Perang Saudara?",
+                    "options": [
+                        "George Washington",
+                        "Thomas Jefferson",
+                        "Abraham Lincoln",
+                        "Theodore Roosevelt"
+                    ],
+                    "correct": "Abraham Lincoln"
+                },
+                {
+                    "question": "Dinasti mana yang memerintah China selama pembangunan Tembok Besar China?",
+                    "options": [
+                        "Dinasti Ming",
+                        "Dinasti Qing",
+                        "Dinasti Han",
+                        "Dinasti Qin"
+                    ],
+                    "correct": "Dinasti Qin"
+                },
+                {
+                    "question": "Siapa penjelajah Eropa pertama yang mencapai India melalui jalur laut?",
+                    "options": [
+                        "Christopher Columbus",
+                        "Vasco da Gama",
+                        "Ferdinand Magellan",
+                        "Marco Polo"
+                    ],
+                    "correct": "Vasco da Gama"
+                },
+                {
+                    "question": "Tanggal berapa Prabowo Subianto dilantik menjadi presiden?",
+                    "options": [
+                        "19 Oktober 2024",
+                        "20 Oktober 2024",
+                        "21 November 2024",
+                        "22 November 2024"
+                    ],
+                    "correct": "19 Oktober 2024"
+                },
+                {
+                    "question": "Kitab Negarakertagama yang menceritakan kejayaan Majapahit ditulis oleh",
+                    "options": [
+                        "Mpu Tantular",
+                        "Mpu Prapanca",
+                        "Mpu Sendok",
+                        "Hayam Wuruk"
+                    ],
+                    "correct": "Mpu Prapanca"
+                },
+                {
+                    "question": "Siapa tokoh yang pertama kali mengusulkan nama 'Indonesia' sebagai identitas nasional?",
+                    "options": [
+                        "Ir. Soekarno",
+                        "Dr. Soetomo",
+                        "Ki Hajar Dewantara",
+                        "Ernest Douwes Dekekr"
+                    ],
+                    "correct": "Ki Hajar Dewantara"
+                },
+                {
+                    "question": "Pada tahun berapakah VOC dibubarkan oleh pemerintah Belanda?",
+                    "options": [
+                        "1799",
+                        "1805",
+                        "1811",
+                        "1824"
+                    ],
+                    "correct": "1799"
+                },
+                {
+                    "question": "Sistem tanam paksa (Cultuurstelsel) diperkenalkan oleh",
+                    "options": [
+                        "Jan Pieterszoon Coen",
+                        "Van Heutsz",
+                        "Van den Bosch",
+                        "Van Deventer"
+                    ],
+                    "correct": "Van den Bosch"
+                },
+                {
+                    "question": "Peristiwa Bandung Lautan Api terjadi pada tahun.",
+                    "options": [
+                        "1945",
+                        "1946",
+                        "1947",
+                        "1948"
+                    ],
+                    "correct": "1946"
+                },
+                {
+                    "question": "Di bawah pemerintahan siapa Republik Romawi mengalami peralihan ke kekaisaran?",
+                    "options": [
+                        "Julius Caesar",
+                        "Augustus",
+                        "Pompey",
+                        "Nerva"
+                    ],
+                    "correct": "Augustus"
+                }
+            ]
+        },
+        {
+            "name": "Basic Physics",
+            "questions": [
+                {
+                    "question": "Hukum apa yang menyatakan bahwa tekanan gas berbanding terbalik dengan volume pada suhu konstan?",
+                    "options": [
+                        "Hukum Boyle",
+                        "Hukum Charles",
+                        "Hukum Avogadro",
+                        "Hukum Gay-Lussac"
+                    ],
+                    "correct": "Hukum Boyle"
+                },
+                {
+                    "question": "Apa yang terjadi dengan energi potensial gravitasi sebuah benda jika posisi benda tersebut dipindahkan ke tempat yang lebih tinggi dari permukaan bumi?",
+                    "options": [
+                        "Energi potensial bertambah",
+                        "Energi potensial berkurang",
+                        "Energi potensial tetap",
+                        "Energi potensial menjadi nol"
+                    ],
+                    "correct": "Energi potensial bertambah"
+                },
+                {
+                    "question": "Jika dua gaya yang bekerja pada benda berarah berlawanan, bagaimana cara kita menentukan resultan gaya yang bekerja?",
+                    "options": [
+                        "Menjumlahkan kedua gaya",
+                        "Mengurangkan kedua gaya",
+                        "Menghitung perkalian kedua gaya",
+                        "Menjumlahkan gaya berdasarkan arah"
+                    ],
+                    "correct": "Mengurangkan kedua gaya"
+                },
+                {
+                    "question": "Hukum Newton yang menyatakan bahwa gaya yang bekerja pada suatu benda sama dengan massa benda dikali percepatannya adalah hukum?",
+                    "options": [
+                        "Hukum Newton I",
+                        "Hukum Newton II",
+                        "Hukum Newton III",
+                        "Hukum Gravitasi Universal"
+                    ],
+                    "correct": "Hukum Newton II"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'gaya sentripetal' dalam gerak melingkar?",
+                    "options": [
+                        "Gaya yang mengarah ke luar dari pusat lingkaran",
+                        "Gaya yang mengarah ke pusat lingkaran",
+                        "Gaya yang menyebabkan percepatan linear",
+                        "Gaya yang terjadi pada benda yang diam"
+                    ],
+                    "correct": "Gaya yang mengarah ke pusat lingkaran"
+                },
+                {
+                    "question": "Siapa yang mengembangkan teori heliosentris yang menyatakan bahwa Matahari adalah pusat tata surya?",
+                    "options": [
+                        "Nikola Copernicus",
+                        "Isaac Newton",
+                        "Galileo Galilei",
+                        "Johannes Kepler"
+                    ],
+                    "correct": "Nikola Copernicus"
+                },
+                {
+                    "question": "Siapa yang menemukan hukum gerak planet yang pertama kali, yang dikenal dengan hukum ellips?",
+                    "options": [
+                        "Isaac Newton",
+                        "Galileo Galilei",
+                        "Johannes Kepler",
+                        "Nikolai Copernicus"
+                    ],
+                    "correct": "Johannes Kepler"
+                },
+                {
+                    "question": "Apa nama hukum yang menyatakan bahwa tekanan suatu gas akan meningkat seiring dengan meningkatnya suhu, jika volume tetap konstan?",
+                    "options": [
+                        "Hukum Boyle",
+                        "Hukum Charles",
+                        "Hukum Gay-Lussac",
+                        "Hukum Avogadro"
+                    ],
+                    "correct": "Hukum Gay-Lussac"
+                },
+                {
+                    "question": "Apa nama fenomena yang terjadi ketika cahaya dari suatu sumber mengalami pembelokan akibat perbedaan kecepatan di media yang berbeda?",
+                    "options": [
+                        "Refleksi",
+                        "Refraksi",
+                        "Difraksi",
+                        "Dispersi"
+                    ],
+                    "correct": "Refraksi"
+                },
+                {
+                    "question": "Manakah dari berikut ini yang bukan merupakan jenis ikatan kimia?",
+                    "options": [
+                        "Ikatan kovalen",
+                        "Ikatan ionik",
+                        "Ikatan logam",
+                        "Ikatan elektromagnetik"
+                    ],
+                    "correct": "Ikatan elektromagnetik"
+                },
+                {
+                    "question": "Proses dekomposisi yang membentuk oksigen dari kalium klorat (KClO₃) dipengaruhi oleh?",
+                    "options": [
+                        "Katalisator",
+                        "Temperatur",
+                        "Tekanan",
+                        "Jumlah reaktan"
+                    ],
+                    "correct": "Temperatur"
+                },
+                {
+                    "question": "Hukum apa yang menyatakan bahwa volume gas berbanding lurus dengan suhu jika tekanan dan jumlah mol gas tetap konstan?",
+                    "options": [
+                        "Hukum Boyle",
+                        "Hukum Charles",
+                        "Hukum Gay-Lussac",
+                        "Hukum Avogadro"
+                    ],
+                    "correct": "Hukum Charles"
+                }
+            ]
+        },
+        {
+            "name": "Basic Chemistry",
+            "questions": [
+                {
+                    "question": "Apa nama partikel subatomik yang ditemukan oleh James Chadwick pada tahun 1932?",
+                    "options": [
+                        "Elektron",
+                        "Proton",
+                        "Neutron",
+                        "Positron"
+                    ],
+                    "correct": "Neutron"
+                },
+                {
+                    "question": "Apa nama unsur kimia yang memiliki nomor atom 92?",
+                    "options": [
+                        "Uranium",
+                        "Plutonium",
+                        "Radium",
+                        "Thorium"
+                    ],
+                    "correct": "Uranium"
+                },
+                {
+                    "question": "Apa nama unsur kimia yang memiliki nomor atom 6 dan merupakan elemen dasar kehidupan?",
+                    "options": [
+                        "Oksigen",
+                        "Karbon",
+                        "Nitrogen",
+                        "Kalsium"
+                    ],
+                    "correct": "Karbon"
+                },
+                {
+                    "question": "Siapa yang pertama kali mengemukakan teori atom modern yang menyatakan bahwa atom terdiri dari inti positif dan elektron yang mengorbit di sekitar inti?",
+                    "options": [
+                        "J.J. Thomson",
+                        "Ernest Rutherford",
+                        "Niels Bohr",
+                        "John Dalton"
+                    ],
+                    "correct": "Ernest Rutherford"
+                },
+                {
+                    "question": "Reaksi apa yang terjadi ketika inti atom dibelah menjadi dua inti yang lebih kecil, melepaskan energi besar?",
+                    "options": [
+                        "Reaksi fusi",
+                        "Reaksi fisi",
+                        "Reaksi sublimasi",
+                        "Reaksi kondensasi"
+                    ],
+                    "correct": "Reaksi fisi"
+                },
+                {
+                    "question": "Siapa yang menemukan elektron dan mengusulkan model atom 'plum pudding'?",
+                    "options": [
+                        "J.J. Thomson",
+                        "Niels Bohr",
+                        "Ernest Rutherford",
+                        "Marie Curie"
+                    ],
+                    "correct": "J.J. Thomson"
+                },
+                {
+                    "question": "Siapa yang pertama kali mengusulkan model atom dengan orbit elektron yang terkuantisasi?",
+                    "options": [
+                        "Niels Bohr",
+                        "Ernest Rutherford",
+                        "Albert Einstein",
+                        "Werner Heisenberg"
+                    ],
+                    "correct": "Niels Bohr"
+                },
+                {
+                    "question": "Reaksi fusi terjadi ketika dua inti ringan bergabung untuk membentuk inti yang lebih berat. Apa reaksi fusi terbesar yang terjadi di dalam bintang?",
+                    "options": [
+                        "Fusi hidrogen menjadi helium",
+                        "Fusi karbon menjadi nitrogen",
+                        "Fusi helium menjadi oksigen",
+                        "Fusi besi menjadi nikel"
+                    ],
+                    "correct": "Fusi hidrogen menjadi helium"
+                },
+                {
+                    "question": "Pada reaksi fisi uranium-235, inti uranium yang terbelah menghasilkan sejumlah besar energi dan beberapa partikel. Apa yang disebut partikel tersebut?",
+                    "options": [
+                        "Positron",
+                        "Neutron",
+                        "Elektron",
+                        "Proton"
+                    ],
+                    "correct": "Neutron"
+                },
+                {
+                    "question": "Bom atom yang pertama kali digunakan dalam perang dunia kedua adalah jenis bom?",
+                    "options": [
+                        "Fusi",
+                        "Fisi",
+                        "Plasma",
+                        "Terbagi"
+                    ],
+                    "correct": "Fisi"
+                },
+                {
+                    "question": "Reaksi yang terjadi dalam bom hidrogen adalah jenis reaksi?",
+                    "options": [
+                        "Fusi",
+                        "Fisi",
+                        "Katalisis",
+                        "Redoks"
+                    ],
+                    "correct": "Fusi"
+                },
+                {
+                    "question": "Siapa yang pertama kali memisahkan isotop uranium-235 untuk digunakan dalam reaksi fisi dalam program Manhattan?",
+                    "options": [
+                        "Enrico Fermi",
+                        "Robert Oppenheimer",
+                        "Leo Szilard",
+                        "Niels Bohr"
+                    ],
+                    "correct": "Enrico Fermi"
+                }
+            ]
+        },
+        {
+            "name": "Economics and Business",
+            "questions": [
+                {
+                    "question": "Siapa yang mengembangkan teori 'invisible hand' dalam ekonomi?",
+                    "options": [
+                        "Adam Smith",
+                        "John Maynard Keynes",
+                        "Karl Marx",
+                        "Milton Friedman"
+                    ],
+                    "correct": "Adam Smith"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'Support' dalam analisis teknikal saham?",
+                    "options": [
+                        "Titik harga tertinggi",
+                        "Titik harga terendah",
+                        "Titik harga stabil yang cenderung tidak turun",
+                        "Titik di mana volume saham meningkat"
+                    ],
+                    "correct": "Titik harga stabil yang cenderung tidak turun"
+                },
+                {
+                    "question": "Teori ekonomi yang menyatakan bahwa pasar bebas akan membawa keseimbangan adalah teori?",
+                    "options": [
+                        "Keynesian",
+                        "Monetarism",
+                        "Klasik",
+                        "Marxisme"
+                    ],
+                    "correct": "Klasik"
+                },
+                {
+                    "question": "Menurut teori 'Keseimbangan Umum', siapa yang mempengaruhi harga pasar?",
+                    "options": [
+                        "Pemerintah",
+                        "Konsumen dan produsen",
+                        "Perusahaan besar",
+                        "Investor institusional"
+                    ],
+                    "correct": "Konsumen dan produsen"
+                },
+                {
+                    "question": "Apa itu 'Moving Average' dalam charting trading?",
+                    "options": [
+                        "Rata-rata harga dalam periode tertentu",
+                        "Grafik harga yang menunjukkan tren",
+                        "Volume perdagangan",
+                        "Indikator volatilitas pasar"
+                    ],
+                    "correct": "Rata-rata harga dalam periode tertentu"
+                },
+                {
+                    "question": "Teori ekonomi mana yang menyatakan bahwa permintaan akan barang dipengaruhi oleh tingkat pendapatan masyarakat?",
+                    "options": [
+                        "Teori Keynesian",
+                        "Teori Marxis",
+                        "Teori Klasik",
+                        "Teori Monetarist"
+                    ],
+                    "correct": "Teori Keynesian"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'Resistance' dalam analisis teknikal saham?",
+                    "options": [
+                        "Titik harga stabil yang cenderung tidak naik",
+                        "Titik harga stabil yang cenderung tidak turun",
+                        "Titik harga tertinggi yang tercapai",
+                        "Titik di mana permintaan menurun"
+                    ],
+                    "correct": "Titik harga stabil yang cenderung tidak naik"
+                },
+                {
+                    "question": "Siapa yang mencetuskan teori 'Makroekonomi' untuk memerangi resesi besar pada tahun 1930-an?",
+                    "options": [
+                        "Adam Smith",
+                        "Karl Marx",
+                        "John Maynard Keynes",
+                        "Friedrich Hayek"
+                    ],
+                    "correct": "John Maynard Keynes"
+                },
+                {
+                    "question": "Apa itu 'Candlestick' dalam analisis charting?",
+                    "options": [
+                        "Metode untuk menggambarkan pergerakan harga dalam periode tertentu",
+                        "Tipe grafik yang menunjukkan volume perdagangan",
+                        "Indikator ekonomi untuk mengukur inflasi",
+                        "Model perhitungan laba perusahaan"
+                    ],
+                    "correct": "Metode untuk menggambarkan pergerakan harga dalam periode tertentu"
+                },
+                {
+                    "question": "Siapa yang dikenal sebagai bapak teori ekonomi mikro dan mengembangkan konsep 'marginal utility'?",
+                    "options": [
+                        "David Ricardo",
+                        "Alfred Marshall",
+                        "Adam Smith",
+                        "John Maynard Keynes"
+                    ],
+                    "correct": "Alfred Marshall"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan 'Bubble Ekonomi' yang terjadi di Jepang pada akhir 1980-an?",
+                    "options": [
+                        "Peningkatan harga saham secara tiba-tiba karena optimisme pasar",
+                        "Krisis utang negara yang menyebabkan inflasi tinggi",
+                        "Kenaikan harga properti yang didorong oleh permintaan yang tidak realistis",
+                        "Peningkatan besar dalam konsumsi barang mewah"
+                    ],
+                    "correct": "Kenaikan harga properti yang didorong oleh permintaan yang tidak realistis"
+                },
+                {
+                    "question": "Salah satu perusahaan terbesar yang mengalami kebangkrutan pada tahun 2001, yang mengubah pandangan terhadap laporan keuangan dan audit, adalah?",
+                    "options": [
+                        "General Motors",
+                        "Lehman Brothers",
+                        "Enron",
+                        "WorldCom"
+                    ],
+                    "correct": "Enron"
+                },
+                {
+                    "question": "Siapa yang mengembangkan teori 'Laba Ekonomi' dalam konteks pasar persaingan sempurna?",
+                    "options": [
+                        "Arthur Pigou",
+                        "Alfred Marshall",
+                        "David Ricardo",
+                        "Jean-Baptiste Say"
+                    ],
+                    "correct": "Alfred Marshall"
+                },
+                {
+                    "question": "Pada tahun 1990-an, perusahaan teknologi apa yang pertama kali menggunakan IPO (Initial Public Offering) untuk memperkenalkan model bisnis berbasis internet?",
+                    "options": [
+                        "Microsoft",
+                        "Amazon",
+                        "Netscape",
+                        "Google"
+                    ],
+                    "correct": "Netscape"
+                }
+            ]
+        },
+        {
+            "name": "Mobil",
+            "questions": [
+                {
+                    "question": "Manakah merek mobil yang berasal dari Jepang?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "BMW",
+                        "Toyota",
+                        "Ford",
+                        "Ferrari"
+                    ],
+                    "correct": "Toyota"
+                },
+                {
+                    "question": "Apa fungsi utama dari sistem ABS pada mobil?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Menambah kecepatan",
+                        "Meningkatkan pengereman",
+                        "Menghemat bahan bakar",
+                        "Mengurangi emisi"
+                    ],
+                    "correct": "Meningkatkan pengereman"
+                },
+                {
+                    "question": "Lamborghini adalah produsen mobil asal negara mana?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Jerman",
+                        "Italia",
+                        "Amerika Serikat",
+                        "Prancis"
+                    ],
+                    "correct": "Italia"
+                },
+                {
+                    "question": "Apa kepanjangan dari SUV dalam dunia otomotif?",
+                    "type": "input",
+                    "correct": "Sport Utility Vehicle"
+                },
+                {
+                    "question": "Mobil listrik umumnya menggunakan jenis baterai apa?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Nickel-Cadmium",
+                        "Lithium-Ion",
+                        "Lead-Acid",
+                        "Hydrogen Fuel Cell"
+                    ],
+                    "correct": "Lithium-Ion"
+                },
+                {
+                    "question": "Apa warna khas dari mobil Ferrari?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Hitam",
+                        "Merah",
+                        "Kuning",
+                        "Putih"
+                    ],
+                    "correct": "Merah"
+                },
+                {
+                    "question": "Apa yang terjadi jika mesin mobil mengalami overheat?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Mobil melaju lebih cepat",
+                        "Mobil sulit dikendalikan",
+                        "Mobil mogok",
+                        "Mobil lebih irit bahan bakar"
+                    ],
+                    "correct": "Mobil mogok"
+                },
+                {
+                    "question": "Apa nama teknologi yang memungkinkan mobil berjalan tanpa pengemudi?",
+                    "type": "input",
+                    "correct": "Self-driving"
+                },
+                {
+                    "question": "Apa nama bagian mobil yang berfungsi meredam guncangan di jalan?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Rem",
+                        "Suspensi",
+                        "Transmisi",
+                        "Radiator"
+                    ],
+                    "correct": "Suspensi"
+                },
+                {
+                    "question": "Mobil sport biasanya memiliki desain aerodinamis untuk tujuan apa?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Menghemat bahan bakar",
+                        "Meningkatkan kecepatan",
+                        "Membuat mobil lebih ringan",
+                        "Mengurangi kebisingan"
+                    ],
+                    "correct": "Meningkatkan kecepatan"
+                }
+            ]
+        },
+        {
+            "name": "Sejarah Indonesia",
+            "questions": [
+                {
+                    "question": "Apa nama asli Panglima Besar Tentara Nasional Indonesia (TNI) yang dikenal dengan julukan 'Sudirman'?",
+                    "type": "input",
+                    "correct": "Sudirman"
+                },
+                {
+                    "question": "Pada 17 Agustus 1945, Soekarno membacakan Proklamasi Kemerdekaan di depan rumah siapa yang juga merupakan tempat bersejarah dalam dunia militer?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Rumah Laksamana Maeda",
+                        "Rumah Dr. Rajiman Wedyodiningrat",
+                        "Rumah Soekarno di Jakarta",
+                        "Rumah Bung Hatta di Jakarta"
+                    ],
+                    "correct": "Rumah Laksamana Maeda"
+                },
+                {
+                    "question": "Siapa yang merancang undang-undang dasar negara Indonesia yang pertama kali disahkan pada 18 Agustus 1945?",
+                    "type": "input",
+                    "correct": "Ir. Soekarno"
+                },
+                {
+                    "question": "Badan Penyelidik Usaha-usaha Kemerdekaan Indonesia (BPUPKI) bertugas untuk menyusun dasar negara, tetapi siapa yang menggagas terbentuknya badan ini?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Dr. Soepomo",
+                        "Ir. Soekarno",
+                        "Bung Hatta",
+                        "Radjiman Wedyodiningrat"
+                    ],
+                    "correct": "Ir. Soekarno"
+                },
+                {
+                    "question": "Apa nama negara yang pada masa awal pembentukan Republik Indonesia dikenal dengan nama 'Indonesia Raya' dalam proklamasi kemerdekaan?",
+                    "type": "input",
+                    "correct": "Indonesia"
+                },
+                {
+                    "question": "Pada tahun 1947, siapa yang terpilih sebagai ketua umum pertama kali dalam organisasi yang mempersiapkan kemerdekaan Indonesia?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Sutan Sjahrir",
+                        "Bung Karno",
+                        "Tan Malaka",
+                        "Muhammad Hatta"
+                    ],
+                    "correct": "Sutan Sjahrir"
+                },
+                {
+                    "question": "Peristiwa yang terjadi pada tahun 1928 yang membawa semangat nasionalisme dan cita-cita kemerdekaan disebut dengan?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Sumpah Pemuda",
+                        "Peristiwa Bandung Lautan Api",
+                        "Proklamasi Kemerdekaan",
+                        "Konferensi Meja Bundar"
+                    ],
+                    "correct": "Sumpah Pemuda"
+                },
+                {
+                    "question": "Siapa tokoh Indonesia yang pernah menjabat sebagai presiden, dan juga dikenal sebagai pejuang yang melawan penjajahan Belanda di Kalimantan?",
+                    "type": "input",
+                    "correct": "Dr. Mohammad Hatta"
+                },
+                {
+                    "question": "Pada masa penjajahan Jepang, organisasi pemuda yang sangat berperan dalam menggagalkan penjajahan Jepang dan mempersiapkan kemerdekaan adalah?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Pemuda Pancasila",
+                        "Perhimpunan Indonesia",
+                        "Angkatan 45",
+                        "Barisan Pemuda Indonesia"
+                    ],
+                    "correct": "Angkatan 45"
+                },
+                {
+                    "question": "Siapakah yang pertama kali menggagas konsep 'Pancasila' sebagai dasar negara Indonesia dalam sidang BPUPKI pada tahun 1945?",
+                    "type": "input",
+                    "correct": "Ir. Soekarno"
+                }
+            ]
+        },
+        {
+            "name": "Hobi",
+            "questions": [
+                {
+                    "question": "Dalam olahraga ekstrem wingsuit flying, jenis parasut apa yang biasanya digunakan untuk mendarat?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Ram-air parachute",
+                        "Round parachute",
+                        "Steerable canopy",
+                        "Static-line parachute"
+                    ],
+                    "correct": "Ram-air parachute"
+                },
+                {
+                    "question": "Di dunia koleksi, apa yang dimaksud dengan 'Mecenatism'?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Koleksi seni lukisan langka",
+                        "Koleksi barang antik zaman Reniassance",
+                        "Koleksi hadiah kerajaan atau aristokrat",
+                        "Koleksi benda terkait dengan patronase seni"
+                    ],
+                    "correct": "Koleksi benda terkait dengan patronase seni"
+                },
+                {
+                    "question": "Seni sand art atau lukisan pasir di abad modern sering dilakukan dengan media apa?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Pasir berwarna",
+                        "Skrin atau layar digital",
+                        "Pasir alami dari pantai",
+                        "Senyawa kimia yang dipadatkan"
+                    ],
+                    "correct": "Pasir berwarna"
+                },
+                {
+                    "question": "Apa nama gaya urban exploration yang berfokus pada eksplorasi terowongan bawah tanah yang sudah tidak digunakan?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Subterranean exploration",
+                        "Catacomb exploration",
+                        "Tunnel diving",
+                        "Underworld trekking"
+                    ],
+                    "correct": "Subterranean exploration"
+                },
+                {
+                    "question": "Apa istilah yang digunakan untuk koleksi barang-barang antik yang terbuat dari bahan kaca atau kristal, seperti vas dan patung?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Crystalization",
+                        "Glassware collecting",
+                        "Crystal collecting",
+                        "Antique glass collecting"
+                    ],
+                    "correct": "Antique glass collecting"
+                },
+                {
+                    "question": "Seni mengumpulkan dan merawat spesimen tanaman langka untuk tujuan penelitian disebut?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Horticulturalism",
+                        "Phytoremediation",
+                        "Botanical collection",
+                        "Herbarium studies"
+                    ],
+                    "correct": "Botanical collection"
+                },
+                {
+                    "question": "Apa nama teknik dalam skateboarding di mana pemain melakukan lompatan tinggi dengan bantuan alat atau medan tertentu, seperti ramp atau rail?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Ollie",
+                        "Kickflip",
+                        "Nollie",
+                        "Bigspin"
+                    ],
+                    "correct": "Ollie"
+                },
+                {
+                    "question": "Apa nama hobi yang melibatkan mengumpulkan instrumen musik dari berbagai budaya, seperti gamelan atau sitar?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Ethnomusicology",
+                        "Historical instrument collection",
+                        "Cultural music research",
+                        "Global musicology"
+                    ],
+                    "correct": "Ethnomusicology"
+                },
+                {
+                    "question": "Apa yang dimaksud dengan teknik 'Caving' dalam dunia eksplorasi bawah tanah?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Menuruni tebing berbahaya",
+                        "Menyelam ke gua yang terendam air",
+                        "Eksplorasi gua kering atau gua berair",
+                        "Pendakian gunung es"
+                    ],
+                    "correct": "Eksplorasi gua kering atau gua berair"
+                },
+                {
+                    "question": "Apa nama profesi yang berfokus pada penelitian dan eksplorasi batuan dan mineral langka untuk hobi koleksi?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Geologist",
+                        "Mineralogist",
+                        "Petrologist",
+                        "Gemologist"
+                    ],
+                    "correct": "Mineralogist"
+                }
+            ]
+        },
+        {
+            "name": "Sepak Bola Dunia",
+            "questions": [
+                {
+                    "question": "Siapa yang menjadi kapten pertama dalam sejarah Tim Nasional Jerman setelah Perang Dunia II?",
+                    "type": "input",
+                    "correct": "Karl-Heinz Rummenigge"
+                },
+                {
+                    "question": "Pada tahun 1984, klub manakah yang memenangkan Piala UEFA dengan mengalahkan Real Madrid di final?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Liverpool",
+                        "Tottenham Hotspur",
+                        "AS Roma",
+                        "Bayer Leverkusen"
+                    ],
+                    "correct": "Tottenham Hotspur"
+                },
+                {
+                    "question": "Pemain asal Brasil yang dikenal dengan julukan 'O Fenômeno' memiliki nama asli apa?",
+                    "type": "input",
+                    "correct": "Ronaldo Luís Nazário de Lima"
+                },
+                {
+                    "question": "Pemain sepak bola mana yang mencetak gol terbanyak sepanjang masa di Liga Inggris (Premier League) hingga tahun 2020?",
+                    "type": "input",
+                    "correct": "Alan Shearer"
+                },
+                {
+                    "question": "Klub manakah yang memiliki stadion dengan kapasitas terbesar di dunia, lebih dari 100.000 penonton?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Manchester United (Old Trafford)",
+                        "FC Barcelona (Camp Nou)",
+                        "Real Madrid (Santiago Bernabéu)",
+                        "Maracanã (Brasil)"
+                    ],
+                    "correct": "FC Barcelona (Camp Nou)"
+                },
+                {
+                    "question": "Siapa yang menjadi pemain pertama yang meraih penghargaan Ballon d'Or pada tahun 1956?",
+                    "type": "input",
+                    "correct": "Stanley Matthews"
+                },
+                {
+                    "question": "Pemain mana yang memegang rekor jumlah gol terbanyak di Copa América hingga 2021?",
+                    "type": "input",
+                    "correct": "Gabriel Batistuta"
+                },
+                {
+                    "question": "Klub sepak bola manakah yang menjadi juara Liga Champions Eropa (sebelumnya Piala Eropa) sebanyak 5 kali pada era 1970-an dan 1980-an?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Bayern Munich",
+                        "Liverpool",
+                        "AC Milan",
+                        "Nottingham Forest"
+                    ],
+                    "correct": "Nottingham Forest"
+                },
+                {
+                    "question": "Di Piala Dunia 1998, siapa yang menjadi pemain termuda yang mencetak gol di final Piala Dunia?",
+                    "type": "input",
+                    "correct": "Patrick Kluivert"
+                },
+                {
+                    "question": "Siapa yang menjadi pelatih yang memenangkan Liga Champions Eropa lebih dari satu kali dengan dua klub berbeda?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Carlo Ancelotti",
+                        "José Mourinho",
+                        "Zinedine Zidane",
+                        "Pep Guardiola"
+                    ],
+                    "correct": "Carlo Ancelotti"
+                }
+            ]
+        },
+        {
+            "name": "Saham dan Pasar Modal",
+            "questions": [
+                {
+                    "question": "Siapakah pendiri dan CEO pertama dari perusahaan Berkshire Hathaway?",
+                    "type": "input",
+                    "correct": "Warren Buffett"
+                },
+                {
+                    "question": "Perusahaan mana yang pertama kali menawarkan sahamnya melalui IPO di bursa saham New York pada tahun 1792?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "American Electric Power",
+                        "Bank of New York",
+                        "General Electric",
+                        "Ford Motor Company"
+                    ],
+                    "correct": "Bank of New York"
+                },
+                {
+                    "question": "Pada tahun 2000, perusahaan manakah yang memiliki kapitalisasi pasar terbesar di dunia?",
+                    "type": "input",
+                    "correct": "Microsoft"
+                },
+                {
+                    "question": "Apa nama indeks saham yang mengukur kinerja 30 perusahaan terbesar di Amerika Serikat?",
+                    "type": "input",
+                    "correct": "Dow Jones Industrial Average"
+                },
+                {
+                    "question": "Perusahaan mana yang dikenal dengan kode saham 'GOOG' di bursa saham NASDAQ?",
+                    "type": "input",
+                    "correct": "Alphabet Inc."
+                },
+                {
+                    "question": "Siapa yang dikenal sebagai investor yang meramalkan krisis keuangan global pada tahun 2008 melalui pendekatan short-selling saham?",
+                    "type": "input",
+                    "correct": "Michael Burry"
+                },
+                {
+                    "question": "Apa istilah yang digunakan untuk menggambarkan pasar saham yang menunjukkan tren naik secara konsisten dalam jangka panjang?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Bear Market",
+                        "Bull Market",
+                        "Correction",
+                        "Consolidation"
+                    ],
+                    "correct": "Bull Market"
+                },
+                {
+                    "question": "Perusahaan manakah yang dikenal dengan kode saham 'TSLA' di NASDAQ?",
+                    "type": "input",
+                    "correct": "Tesla Inc."
+                },
+                {
+                    "question": "Dalam teori portofolio, siapa yang mengembangkan konsep 'Portofolio Optimal' yang mendiversifikasi risiko dan memaksimalkan return?",
+                    "type": "input",
+                    "correct": "Harry Markowitz"
+                },
+                {
+                    "question": "Pada tahun 1999, siapa yang menjadi CEO pertama yang menjual saham IPO untuk perusahaan e-commerce Amazon?",
+                    "type": "input",
+                    "correct": "Jeff Bezos"
+                }
+            ]
+        },
+        {
+            "name": "Matematika Dasar",
+            "questions": [
+                {
+                    "question": "Dalam sebuah toko, ada 15 keranjang yang masing-masing berisi 16 buah apel. Jika 3 keranjang rusak dan kehilangan 5 buah apel masing-masing, berapa banyak apel yang tersisa?",
+                    "type": "input",
+                    "correct": "220"
+                },
+                {
+                    "question": "Sebuah pabrik memproduksi 120 unit barang setiap hari. Setelah 5 hari, pabrik menurunkan produksi menjadi 100 unit per hari selama 3 hari. Berapa total barang yang diproduksi setelah 8 hari?",
+                    "type": "input",
+                    "correct": "1160"
+                },
+                {
+                    "question": "Sebuah kolam memiliki panjang 12 meter, lebar 6 meter, dan kedalaman 2 meter. Berapa liter air yang dibutuhkan untuk mengisi kolam tersebut? (1 m³ = 1000 liter)",
+                    "type": "input",
+                    "correct": "14400"
+                },
+                {
+                    "question": "Seorang pedagang membeli 30 karung beras. Setiap karung berisi 50 kg beras. Jika 5 karung beras rusak dan hilang 10 kg beras per karung, berapa total berat beras yang masih ada?",
+                    "type": "input",
+                    "correct": "1450"
+                },
+                {
+                    "question": "Sebuah perusahaan memiliki 5 divisi. Divisi pertama memiliki 50 karyawan, divisi kedua 60 karyawan, divisi ketiga 40 karyawan, divisi keempat 70 karyawan, dan divisi kelima 80 karyawan. Jika 10% dari karyawan di setiap divisi mengundurkan diri, berapa total jumlah karyawan yang masih bekerja?",
+                    "type": "input",
+                    "correct": "280"
+                },
+                {
+                    "question": "Jika 3x + 5 = 2x + 10, berapa nilai x?",
+                    "type": "input",
+                    "correct": "5"
+                },
+                {
+                    "question": "Sebuah bus mengangkut 40 penumpang pada awal perjalanan. Setiap 10 menit, 2 penumpang turun dan 3 penumpang naik. Berapa banyak penumpang yang ada di bus setelah 1 jam?",
+                    "type": "input",
+                    "correct": "55"
+                },
+                {
+                    "question": "Tiga teman, Andi, Budi, dan Chika, masing-masing memiliki uang. Andi memiliki dua kali lipat uang Budi, dan Budi memiliki tiga kali lipat uang Chika. Jika total uang mereka adalah Rp 450.000, berapa banyak uang yang dimiliki masing-masing?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Andi: Rp 300.000, Budi: Rp 150.000, Chika: Rp 50.000",
+                        "Andi: Rp 225.000, Budi: Rp 150.000, Chika: Rp 75.000",
+                        "Andi: Rp 200.000, Budi: Rp 100.000, Chika: Rp 50.000",
+                        "Andi: Rp 250.000, Budi: Rp 100.000, Chika: Rp 100.000"
+                    ],
+                    "correct": "Andi: Rp 300.000, Budi: Rp 150.000, Chika: Rp 50.000"
+                },
+                {
+                    "question": "Jika harga sebuah barang turun 25% dan menjadi Rp 180.000, berapakah harga semula sebelum diskon?",
+                    "type": "multiple-choice",
+                    "options": [
+                        "Rp 230.000",
+                        "Rp 240.000",
+                        "Rp 250.000",
+                        "Rp 260.000"
+                    ],
+                    "correct": "Rp 240.000"
+                },
+                {
+                    "question": "Sebuah bak mandi berbentuk kubus memiliki panjang sisi 2 meter. Jika bak mandi tersebut terisi penuh dengan air, berapa liter air yang diperlukan untuk mengisinya? (1 m³ = 1000 liter)",
+                    "type": "multiple-choice",
+                    "options": [
+                        "2000 liter",
+                        "4000 liter",
+                        "8000 liter",
+                        "16000 liter"
+                    ],
+                    "correct": "8000 liter"
+                }
+            ]
+        }
     ]
 }
