@@ -121,7 +121,6 @@ const TicTacToeQuiz: React.FC = () => {
     }
     return null;
   };
-  
 
   const resetTurn = () => {
     setFeedback(null);
@@ -233,7 +232,7 @@ const TicTacToeQuiz: React.FC = () => {
             currentPlayer === "O" ? "text-blue-500" : "text-red-500"
           }`}
         >
-          Current turn: {currentPlayer === "O" ? "Team A (O)" : "Team B (X)"}
+          Current Turn: {currentPlayer === "O" ? "Team A (O)" : "Team B (X)"}
         </h2>
       </div>
 
@@ -295,22 +294,21 @@ const TicTacToeQuiz: React.FC = () => {
         </div>
       )}
       <div className="grid grid-cols-4 gap-4 mt-5">
-        {board.map((cell, index) => (
-          <button
+      {board.map((cell, index) => (
+        <button
           key={index}
-          className={`w-28 h-28 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 ${
-            darkMode
-              ? "border-gray-600 bg-gray-800"
-              : "border-gray-300 bg-white"
-          } ${selectedIndex === index ? "bg-green-500 text-white" : ""}
-          ${cell === "O" ? "bg-[#3b82f6] text-white" : ""}
-          ${cell === "X" ? "bg-[#ef4444] text-white" : ""}`}
+          className={`w-28 h-28 border flex items-center justify-center text-lg font-bold rounded-lg transition-all duration-300 
+            ${cell === "O" ? "bg-[#3B82F6] text-white" : ""} 
+            ${cell === "X" ? "bg-[#EF4444] text-white" : ""} 
+            ${!cell ? (darkMode ? "border-gray-600 bg-gray-800" : "border-gray-300 bg-white") : ""} 
+            ${selectedIndex === index ? "bg-green-500 text-white" : ""}
+          `}
           onClick={() => handleCellClick(index)}
           disabled={!!cell || isAnswering}
         >
-            <span className="p-5">{cell || cellCategories[index]}</span>
-          </button>
-        ))}
+          <span className="p-5">{cell || cellCategories[index]}</span>
+        </button>
+      ))}
       </div>
       {winnerMessage && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
