@@ -32,6 +32,41 @@
             "question": "Manakah dibawah ini yang bukan merupakan Design Pattern dengan Behavioral Patterns",
             "options": ["Visitor", "State", "Adapter", "Strategy"],
             "correct": "Adapter"
+          },
+          {
+            "question": "Dalam konteks sistem terdistribusi, apa itu 'CAP Theorem'?",
+            "options": ["Consistency, Authentication, Partition Tolerance","Consistency, Authentication, Persistent","Consistency, Accountability, Partition Tolerance","Consistency, Availability, Partition Tolerance"],
+            "correct": "Consistency, Availability, Partition Tolerance"
+          },
+          {
+            "question": "Apa yang dimaksud dengan 'monads' dalam pemrograman fungsional?",
+            "options": ["Struktur data untuk menyimpan nilai","Pola desain untuk menangani side effects dan operasi komputasi berurutan","Algoritma untuk pencarian dalam grafik","Bahasa pemrograman yang didesain untuk menghitung nilai dalam logika predikat"],
+            "correct": "Pola desain untuk menangani side effects dan operasi komputasi berurutan"
+          },
+          {
+            "question": "Dalam teori kompleksitas algoritma, apa yang dimaksud dengan 'NP-complete'?",
+            "options": ["Kelas masalah yang dapat diselesaikan dalam waktu polinomial dengan algoritma yang efisien","Kelas masalah yang hanya dapat diselesaikan dengan algoritma non-deterministik dalam waktu polinomial","Kelas masalah yang tidak dapat diselesaikan dalam waktu polinomial, bahkan dengan algoritma yang sangat efisien","Kelas masalah yang dapat diselesaikan dalam waktu polinomial, tetapi memerlukan ruang yang sangat besar"],
+            "correct": "Kelas masalah yang hanya dapat diselesaikan dengan algoritma non-deterministik dalam waktu polinomial"
+          },
+          {
+            "question": "Apa yang dimaksud dengan 'Turing Completeness'?",
+            "options": ["Kemampuan sebuah mesin atau bahasa pemrograman untuk menyelesaikan tugas-tugas yang dapat diselesaikan oleh komputer klasik","Kemampuan sebuah sistem untuk mensimulasikan algoritma dari mesin Turing","Kemampuan bahasa pemrograman untuk memecahkan masalah dalam waktu konstan","Kemampuan komputer untuk menangani operasi yang melibatkan banyak dimensi"],
+            "correct": "Kemampuan sebuah sistem untuk mensimulasikan algoritma dari mesin Turing"
+          },
+          {
+            "question": "Apa kepanjangan dari 'BGP' dalam konteks jaringan komputer?",
+            "options": ["Basic Gateway Protocol","Border Gateway Protocol","Binary Gateway Protocol","Broadband Gateway Protocol"],
+            "correct": "Border Gateway Protocol"
+          },
+          {
+            "question": "Apa yang dimaksud dengan 'RAID' dalam sistem penyimpanan data?",
+            "options": ["Redundant Array of Independent Disks","Random Access Independent Disks"," Redundant Array of Integrated Devices","Remote Array of Integrated Disks"],
+            "correct": "Redundant Array of Independent Disks"
+          },
+          {
+            "question": "Apa kepanjangan dari 'RAID 0' dalam teknologi penyimpanan data?",
+            "options": ["Redundant Array of Independent Disks - Zero","Random Array of Independent Disks - Optimized","Redundant Array of Independent Disks - Distributed","Redundant Array of Independent Disks - Striped"],
+            "correct": "Redundant Array of Independent Disks - Striped"
           }
         ]
       },
@@ -87,6 +122,96 @@
             "question": "Negara mana yang memiliki ibu kota bernama N'Djamena?",
             "options": ["Niger", "Chad", "Sudan Selatan", "Mauritania"],
             "correct": "Chad"
+          },
+          {
+            "question": "Laut apa yang terletak di antara semenanjung Italia dan benua Eropa?",
+            "options": ["Laut Mediterania", "Laut Adriatik", "Laut Aegea", "Laut Karibia"],
+            "correct": "Laut Adriatik"
+          },
+          {
+            "question": "Di negara mana terletak danau paling dalam di dunia, Danau Baikal?",
+            "options": ["Kazakhstan", "Rusia", "Mongolia", "China"],
+            "correct": "Rusia"
+          },
+          {
+            "question": "Apa nama sungai yang mengalir melalui kota Paris?",
+            "options": ["Sungai Thames", "Sungai Danube", "Sungai Seine", "Sungai Loire"],
+            "correct": "Sungai Seine"
+          },
+          {
+            "question": "Benua manakah yang memiliki jumlah negara terbanyak?",
+            "options": ["Afrika", "Asia", "Eropa", "Amerika"],
+            "correct": "Afrika"
+          },
+          {
+            "question": "Apa nama sungai terpanjang di dunia?",
+            "options": ["Amazon", "Nil", "Yangtze", "Mississippi"],
+            "correct": "Nil"
+          }
+        ]
+      },
+      {
+        "name": "Arts",
+        "questions": [
+          {
+            "question": "Siapa penulis novel '1984'?",
+            "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Margaret Atwood"],
+            "correct": "George Orwell"
+          },
+          {
+            "question": "Siapa pengarang novel 'The Great Gatsby'?",
+            "options": ["Ernest Hemingway", "F. Scott Fitzgerald", "John Steinbeck", "William Faulkner"],
+            "correct": "F. Scott Fitzgerald"
+          },
+          {
+            "question": "Siapa penyanyi yang terkenal dengan lagu 'Like a Rolling Stone' dan dijuluki 'Bob Dylan'?",
+            "options": ["Bruce Springsteen", "Bob Dylan", "Johnny Cash", "Elvis Presley"],
+            "correct": "Bob Dylan"
+          },
+          {
+            "question": "Film apa yang memenangkan Academy Award untuk Film Terbaik pada tahun 1994?",
+            "options": ["The Shawshank Redemption", "Pulp Fiction", "Forrest Gump", "The Godfather"],
+            "correct": "Forrest Gump"
+          },
+          {
+            "question": "Film 'Avengers: Endgame' dirilis pada tahun?",
+            "options": ["2018", "2019", "2020", "2021"],
+            "correct": "2019"
+          },
+          {
+            "question": "Siapa sutradara yang mengarahkan film 'Mad Max: Fury Road' (2015), yang memenangkan 6 Oscar?",
+            "options": ["George Miller", "James Cameron", "Ridley Scott", "Peter Jackson"],
+            "correct": "George Miller"
+          },
+          {
+            "question": "Dalam film 'The Revenant' (2015), siapa yang memenangkan Oscar sebagai Aktor Terbaik untuk perannya sebagai Hugh Glass?",
+            "options": ["Matthew McConaughey", "Leonardo DiCaprio", "Tom Hardy", "Christian Bale"],
+            "correct": "Leonardo DiCaprio"
+          },
+          {
+            "question": "Siapa sutradara film 'The Shape of Water' (2017), yang meraih Oscar untuk Film Terbaik?",
+            "options": ["Guillermo del Toro", "Tim Burton", "Steven Spielberg", "Martin Scorsese"],
+            "correct": "Guillermo del Toro"
+          },
+          {
+            "question": "Film 'Parasite' (2019) menjadi film non-Bahasa Inggris pertama yang memenangkan Oscar Film Terbaik. Siapa sutradara film ini?",
+            "options": ["Bong Joon-ho", "Park Chan-wook", "Lee Chang-dong", "Kim Ki-duk"],
+            "correct": "Bong Joon-ho"
+          },
+          {
+            "question": "Film 'The Lion King' (2019) adalah versi live-action dari film animasi tahun berapa?",
+            "options": ["1989", "1994", "2001", "2010"],
+            "correct": "1994"
+          },
+          {
+            "question": "Dalam film 'No Time to Die' (2021), siapa yang terakhir kali berperan sebagai James Bond sebelum Daniel Craig?",
+            "options": ["Pierce Brosnan", "Sean Connery", "Roger Moore", "Timothy Dalton"],
+            "correct": "Pierce Brosnan"
+          },
+          {
+            "question": "Siapa yang memenangkan penghargaan Best Actress di Oscar 2021 untuk perannya dalam film 'Nomadland'?",
+            "options": ["Frances McDormand", "Viola Davis", "Andra Day", "Carey Mulligan"],
+            "correct": "Frances McDormand"
           }
         ]
       },
@@ -107,6 +232,46 @@
             "question": "Sebuah perusahaan memiliki 100 karyawan. Saat ini, 99% dari mereka telah menyelesaikan pelatihan sertifikasi khusus. Manajemen ingin menurunkan persentase ini menjadi 98% dengan mengurangi jumlah karyawan yang telah bersertifikasi. Berapa banyak karyawan bersertifikasi yang harus dikeluarkan dari perusahaan agar persentase turun menjadi 98%?",
             "type": "input",
             "correct": "50"
+          },
+          {
+            "question": "Sebuah perusahaan menginvestasikan Rp 5.000.000 pada proyek dengan tingkat pengembalian 10% per tahun. Berapa nilai investasi tersebut setelah 3 tahun?",
+            "options": ["Rp 6.500.000", "Rp 7.000.000", "Rp 7.500.000", "Rp 8.000.000"],
+            "correct": "Rp 6.650.000"
+          },
+          {
+            "question": "Dalam sebuah pertandingan, seorang pemain memenangkan 70% dari 200 pertandingan yang dimainkan. Jika ia kehilangan 25% dari sisa pertandingan, berapa banyak pertandingan yang dia menangkan dan kalah?",
+            "options": ["140 menang, 50 kalah", "140 menang, 60 kalah", "150 menang, 50 kalah", "150 menang, 60 kalah"],
+            "correct": "140 menang, 60 kalah"
+          },
+          {
+            "question": "Jika suatu barang mengalami kenaikan harga 15% dan harga baru barang tersebut menjadi Rp 460.000, berapakah harga awal barang tersebut?",
+            "options": ["Rp 400.000", "Rp 450.000", "Rp 425.000", "Rp 440.000"],
+            "correct": "Rp 400.000"
+          },
+          {
+            "question": "Sebuah kotak berisi 5 bola merah, 3 bola biru, dan 2 bola hijau. Jika 3 bola diambil secara acak, berapa peluang untuk mengambil 2 bola merah dan 1 bola biru?",
+            "options": ["5/56", "15/56", "10/56", "3/56"],
+            "correct": "15/56"
+          },
+          {
+            "question": "Dari 8 orang yang akan dipilih menjadi ketua dan wakil ketua dalam sebuah organisasi, berapa banyak cara yang dapat dilakukan untuk memilih ketua dan wakil ketua?",
+            "options": ["56", "64", "72", "80"],
+            "correct": "56"
+          },
+          {
+            "question": "Dari 10 buku yang tersedia, 4 di antaranya adalah buku matematika. Jika 3 buku dipilih secara acak, berapa banyak cara untuk memilih 2 buku matematika dan 1 buku non-matematika?",
+            "options": ["84", "90", "96", "100"],
+            "correct": "84"
+          },
+          {
+            "question": "Dalam sebuah lomba, terdapat 6 peserta yang akan dipilih untuk menduduki 3 posisi teratas (juara 1, 2, dan 3). Berapa banyak cara untuk memilih pemenang lomba tersebut?",
+            "options": ["120", "100", "90", "80"],
+            "correct": "120"
+          },
+          {
+            "question": "Jika sebuah kotak berisi 10 bola, terdiri dari 4 bola merah, 3 bola biru, dan 3 bola hijau, berapa banyak cara untuk memilih 4 bola secara acak jika bola yang dipilih harus terdiri dari 2 bola merah, 1 bola biru, dan 1 bola hijau?",
+            "options": ["150", "175", "180", "200"],
+            "correct": "150"
           }
         ]
       },
@@ -142,6 +307,21 @@
             "question": "Makanan khas dari daerah Ambon yang terbuat dari ikan cakalang yang disajikan dengan sambal colo-colo adalah?",
             "options": ["Ikan Bakar Cakalang", "Ikan Cakalang Fufu", "Ikan Tudeh", "Ikan Woku"],
             "correct": "Ikan Cakalang Fufu"
+          },
+          {
+            "question": "Makanan khas yang terbuat dari ketan, kelapa parut, dan gula merah, biasanya dibungkus dengan daun pisang, disebut?",
+            "options": ["Lapis legit", "Klepon", "Lontong", "Serabi"],
+            "correct": "Klepon"
+          },
+          {
+            "question": "Salah satu rempah yang digunakan untuk memberikan aroma dan rasa khas pada masakan Indonesia, terutama pada nasi goreng dan soto, adalah?",
+            "options": ["Kalamak", "Kunyit", "Ketumbar", "Sereh"],
+            "correct": "Kunyit"
+          },
+          {
+            "question": "Kunci utama dari rasa khas rendang berasal dari bumbu yang dimasak bersama santan dan rempah-rempah. Salah satu rempah utama yang digunakan adalah?",
+            "options": ["Cengkeh", "Kunyit", "Jahe", "Lada"],
+            "correct": "Cengkeh"
           }
         ]
       },
@@ -157,6 +337,16 @@
             "question": "Negara mana yang memiliki ekonomi terbesar di Eropa?",
             "options": ["Prancis", "Jerman", "Inggris", "Italia"],
             "correct": "Jerman"
+          },
+          {
+            "question": "Apa nama ibukota negara Kanada?",
+            "options": ["Ottawa", "Toronto", "Vancouver", "Montreal"],
+            "correct": "Ottawa"
+          },
+          {
+            "question": "Siapa yang menjadi wali kota pertama Jakarta setelah kemerdekaan Indonesia?",
+            "options": ["Ali Sadikin", "Sutiyoso", "Abdurrahman Baswedan", "Soemarno"],
+            "correct": "Soemarno"
           },
           {
             "question": "Ibukota negara manakah yang memiliki jumlah huruf terbanyak dalam ejaan resminya?",
@@ -187,6 +377,11 @@
             "question": "Kode plat nomor \"EA\" digunakan untuk kendaraan dari provinsi mana?",
             "options": ["Gorontalo", "Nusa Tenggara Barat", "Nusa Tenggara Timur", "Maluku"],
             "correct": "Nusa Tenggara Barat"
+          },
+          {
+            "question": "Pada tahun berapa Jakarta secara resmi berganti nama dari Batavia menjadi Jakarta?",
+            "options": ["1945", "1949", "1960", "1972"],
+            "correct": "1949"
           }
         ]
       },
@@ -257,6 +452,256 @@
             "question": "Siapa presiden Amerika Serikat yang memimpin selama Perang Saudara?",
             "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Theodore Roosevelt"],
             "correct": "Abraham Lincoln"
+          },
+          {
+            "question": "Dinasti mana yang memerintah China selama pembangunan Tembok Besar China?",
+            "options": ["Dinasti Ming","Dinasti Qing","Dinasti Han","Dinasti Qin"],
+            "correct": "Dinasti Qin" 
+          },
+          {
+            "question": "Siapa penjelajah Eropa pertama yang mencapai India melalui jalur laut?",
+            "options": ["Christopher Columbus","Vasco da Gama","Ferdinand Magellan","Marco Polo"],
+            "correct": "Vasco da Gama" 
+          },
+          {
+            "question": "Tanggal berapa Prabowo Subianto dilantik menjadi presiden?",
+            "options": ["19 Oktober 2024","20 Oktober 2024","21 November 2024","22 November 2024"],
+            "correct": "19 Oktober 2024" 
+          },
+          {
+            "question": "Kitab Negarakertagama yang menceritakan kejayaan Majapahit ditulis oleh",
+            "options": ["Mpu Tantular","Mpu Prapanca","Mpu Sendok","Hayam Wuruk"],
+            "correct": "Mpu Prapanca" 
+          },
+          {
+            "question": "Siapa tokoh yang pertama kali mengusulkan nama 'Indonesia' sebagai identitas nasional?",
+            "options": ["Ir. Soekarno","Dr. Soetomo","Ki Hajar Dewantara","Ernest Douwes Dekekr"],
+            "correct": "Ki Hajar Dewantara" 
+          },
+          {
+            "question": "Pada tahun berapakah VOC dibubarkan oleh pemerintah Belanda?",
+            "options": ["1799","1805","1811","1824"],
+            "correct": "1799" 
+          },
+          {
+            "question": "Sistem tanam paksa (Cultuurstelsel) diperkenalkan oleh",
+            "options": ["Jan Pieterszoon Coen","Van Heutsz","Van den Bosch","Van Deventer"],
+            "correct": "Van den Bosch" 
+          },
+          {
+            "question": "Peristiwa Bandung Lautan Api terjadi pada tahun.",
+            "options": ["1945","1946","1947","1948"],
+            "correct": "1946" 
+          },
+          {
+            "question": "Di bawah pemerintahan siapa Republik Romawi mengalami peralihan ke kekaisaran?",
+            "options": ["Julius Caesar", "Augustus", "Pompey", "Nerva"],
+            "correct": "Augustus"
+          }
+        ]
+      },
+      {
+        "name": "Basic Physics",
+        "questions": [
+          {
+            "question": "Hukum apa yang menyatakan bahwa tekanan gas berbanding terbalik dengan volume pada suhu konstan?",
+            "options": ["Hukum Boyle", "Hukum Charles", "Hukum Avogadro", "Hukum Gay-Lussac"],
+            "correct": "Hukum Boyle"
+          },
+          {
+            "question": "Apa yang terjadi dengan energi potensial gravitasi sebuah benda jika posisi benda tersebut dipindahkan ke tempat yang lebih tinggi dari permukaan bumi?",
+            "options": ["Energi potensial bertambah", "Energi potensial berkurang", "Energi potensial tetap", "Energi potensial menjadi nol"],
+            "correct": "Energi potensial bertambah"
+          },
+          {
+            "question": "Jika dua gaya yang bekerja pada benda berarah berlawanan, bagaimana cara kita menentukan resultan gaya yang bekerja?",
+            "options": ["Menjumlahkan kedua gaya", "Mengurangkan kedua gaya", "Menghitung perkalian kedua gaya", "Menjumlahkan gaya berdasarkan arah"],
+            "correct": "Mengurangkan kedua gaya"
+          },
+          {
+            "question": "Hukum Newton yang menyatakan bahwa gaya yang bekerja pada suatu benda sama dengan massa benda dikali percepatannya adalah hukum?",
+            "options": ["Hukum Newton I", "Hukum Newton II", "Hukum Newton III", "Hukum Gravitasi Universal"],
+            "correct": "Hukum Newton II"
+          },
+          {
+            "question": "Apa yang dimaksud dengan 'gaya sentripetal' dalam gerak melingkar?",
+            "options": ["Gaya yang mengarah ke luar dari pusat lingkaran", "Gaya yang mengarah ke pusat lingkaran", "Gaya yang menyebabkan percepatan linear", "Gaya yang terjadi pada benda yang diam"],
+            "correct": "Gaya yang mengarah ke pusat lingkaran"
+          },
+          {
+            "question": "Siapa yang mengembangkan teori heliosentris yang menyatakan bahwa Matahari adalah pusat tata surya?",
+            "options": ["Nikola Copernicus", "Isaac Newton", "Galileo Galilei", "Johannes Kepler"],
+            "correct": "Nikola Copernicus"
+          },
+          {
+            "question": "Siapa yang menemukan hukum gerak planet yang pertama kali, yang dikenal dengan hukum ellips?",
+            "options": ["Isaac Newton", "Galileo Galilei", "Johannes Kepler", "Nikolai Copernicus"],
+            "correct": "Johannes Kepler"
+          },
+          {
+            "question": "Apa nama hukum yang menyatakan bahwa tekanan suatu gas akan meningkat seiring dengan meningkatnya suhu, jika volume tetap konstan?",
+            "options": ["Hukum Boyle", "Hukum Charles", "Hukum Gay-Lussac", "Hukum Avogadro"],
+            "correct": "Hukum Gay-Lussac"
+          },
+          {
+            "question": "Apa nama fenomena yang terjadi ketika cahaya dari suatu sumber mengalami pembelokan akibat perbedaan kecepatan di media yang berbeda?",
+            "options": ["Refleksi", "Refraksi", "Difraksi", "Dispersi"],
+            "correct": "Refraksi"
+          },
+          {
+            "question": "Manakah dari berikut ini yang bukan merupakan jenis ikatan kimia?",
+            "options": ["Ikatan kovalen", "Ikatan ionik", "Ikatan logam", "Ikatan elektromagnetik"],
+            "correct": "Ikatan elektromagnetik"
+          },
+          {
+            "question": "Proses dekomposisi yang membentuk oksigen dari kalium klorat (KClO₃) dipengaruhi oleh?",
+            "options": ["Katalisator", "Temperatur", "Tekanan", "Jumlah reaktan"],
+            "correct": "Temperatur"
+          },
+          {
+            "question": "Hukum apa yang menyatakan bahwa volume gas berbanding lurus dengan suhu jika tekanan dan jumlah mol gas tetap konstan?",
+            "options": ["Hukum Boyle", "Hukum Charles", "Hukum Gay-Lussac", "Hukum Avogadro"],
+            "correct": "Hukum Charles"
+          }
+        ]
+      },
+      {
+        "name": "Basic Chemistry",
+        "questions": [
+          {
+            "question": "Apa nama partikel subatomik yang ditemukan oleh James Chadwick pada tahun 1932?",
+            "options": ["Elektron", "Proton", "Neutron", "Positron"],
+            "correct": "Neutron"
+          },
+          {
+            "question": "Apa nama unsur kimia yang memiliki nomor atom 92?",
+            "options": ["Uranium", "Plutonium", "Radium", "Thorium"],
+            "correct": "Uranium"
+          },
+          {
+            "question": "Apa nama unsur kimia yang memiliki nomor atom 6 dan merupakan elemen dasar kehidupan?",
+            "options": ["Oksigen", "Karbon", "Nitrogen", "Kalsium"],
+            "correct": "Karbon"
+          },
+          {
+            "question": "Siapa yang pertama kali mengemukakan teori atom modern yang menyatakan bahwa atom terdiri dari inti positif dan elektron yang mengorbit di sekitar inti?",
+            "options": ["J.J. Thomson", "Ernest Rutherford", "Niels Bohr", "John Dalton"],
+            "correct": "Ernest Rutherford"
+          },
+          {
+            "question": "Reaksi apa yang terjadi ketika inti atom dibelah menjadi dua inti yang lebih kecil, melepaskan energi besar?",
+            "options": ["Reaksi fusi", "Reaksi fisi", "Reaksi sublimasi", "Reaksi kondensasi"],
+            "correct": "Reaksi fisi"
+          },
+          {
+            "question": "Siapa yang menemukan elektron dan mengusulkan model atom 'plum pudding'?",
+            "options": ["J.J. Thomson", "Niels Bohr", "Ernest Rutherford", "Marie Curie"],
+            "correct": "J.J. Thomson"
+          },
+          {
+            "question": "Siapa yang pertama kali mengusulkan model atom dengan orbit elektron yang terkuantisasi?",
+            "options": ["Niels Bohr", "Ernest Rutherford", "Albert Einstein", "Werner Heisenberg"],
+            "correct": "Niels Bohr"
+          },
+          {
+            "question": "Reaksi fusi terjadi ketika dua inti ringan bergabung untuk membentuk inti yang lebih berat. Apa reaksi fusi terbesar yang terjadi di dalam bintang?",
+            "options": ["Fusi hidrogen menjadi helium", "Fusi karbon menjadi nitrogen", "Fusi helium menjadi oksigen", "Fusi besi menjadi nikel"],
+            "correct": "Fusi hidrogen menjadi helium"
+          },
+          {
+            "question": "Pada reaksi fisi uranium-235, inti uranium yang terbelah menghasilkan sejumlah besar energi dan beberapa partikel. Apa yang disebut partikel tersebut?",
+            "options": ["Positron", "Neutron", "Elektron", "Proton"],
+            "correct": "Neutron"
+          },
+          {
+            "question": "Bom atom yang pertama kali digunakan dalam perang dunia kedua adalah jenis bom?",
+            "options": ["Fusi", "Fisi", "Plasma", "Terbagi"],
+            "correct": "Fisi"
+          },
+          {
+            "question": "Reaksi yang terjadi dalam bom hidrogen adalah jenis reaksi?",
+            "options": ["Fusi", "Fisi", "Katalisis", "Redoks"],
+            "correct": "Fusi"
+          },
+          {
+            "question": "Siapa yang pertama kali memisahkan isotop uranium-235 untuk digunakan dalam reaksi fisi dalam program Manhattan?",
+            "options": ["Enrico Fermi", "Robert Oppenheimer", "Leo Szilard", "Niels Bohr"],
+            "correct": "Enrico Fermi"
+          }
+        ]
+      },
+      {
+        "name": "Economics and Business",
+        "questions": [
+          {
+            "question": "Siapa yang mengembangkan teori 'invisible hand' dalam ekonomi?",
+            "options": ["Adam Smith", "John Maynard Keynes", "Karl Marx", "Milton Friedman"],
+            "correct": "Adam Smith"
+          },
+          {
+            "question": "Apa yang dimaksud dengan 'Support' dalam analisis teknikal saham?",
+            "options": ["Titik harga tertinggi", "Titik harga terendah", "Titik harga stabil yang cenderung tidak turun", "Titik di mana volume saham meningkat"],
+            "correct": "Titik harga stabil yang cenderung tidak turun"
+          },
+          {
+            "question": "Teori ekonomi yang menyatakan bahwa pasar bebas akan membawa keseimbangan adalah teori?",
+            "options": ["Keynesian", "Monetarism", "Klasik", "Marxisme"],
+            "correct": "Klasik"
+          },
+          {
+            "question": "Menurut teori 'Keseimbangan Umum', siapa yang mempengaruhi harga pasar?",
+            "options": ["Pemerintah", "Konsumen dan produsen", "Perusahaan besar", "Investor institusional"],
+            "correct": "Konsumen dan produsen"
+          },
+          {
+            "question": "Apa itu 'Moving Average' dalam charting trading?",
+            "options": ["Rata-rata harga dalam periode tertentu", "Grafik harga yang menunjukkan tren", "Volume perdagangan", "Indikator volatilitas pasar"],
+            "correct": "Rata-rata harga dalam periode tertentu"
+          },
+          {
+            "question": "Teori ekonomi mana yang menyatakan bahwa permintaan akan barang dipengaruhi oleh tingkat pendapatan masyarakat?",
+            "options": ["Teori Keynesian", "Teori Marxis", "Teori Klasik", "Teori Monetarist"],
+            "correct": "Teori Keynesian"
+          },
+          {
+            "question": "Apa yang dimaksud dengan 'Resistance' dalam analisis teknikal saham?",
+            "options": ["Titik harga stabil yang cenderung tidak naik", "Titik harga stabil yang cenderung tidak turun", "Titik harga tertinggi yang tercapai", "Titik di mana permintaan menurun"],
+            "correct": "Titik harga stabil yang cenderung tidak naik"
+          },
+          {
+            "question": "Siapa yang mencetuskan teori 'Makroekonomi' untuk memerangi resesi besar pada tahun 1930-an?",
+            "options": ["Adam Smith", "Karl Marx", "John Maynard Keynes", "Friedrich Hayek"],
+            "correct": "John Maynard Keynes"
+          },
+          {
+            "question": "Apa itu 'Candlestick' dalam analisis charting?",
+            "options": ["Metode untuk menggambarkan pergerakan harga dalam periode tertentu", "Tipe grafik yang menunjukkan volume perdagangan", "Indikator ekonomi untuk mengukur inflasi", "Model perhitungan laba perusahaan"],
+            "correct": "Metode untuk menggambarkan pergerakan harga dalam periode tertentu"
+          },
+          {
+            "question": "Siapa yang dikenal sebagai bapak teori ekonomi mikro dan mengembangkan konsep 'marginal utility'?",
+            "options": ["David Ricardo", "Alfred Marshall", "Adam Smith", "John Maynard Keynes"],
+            "correct": "Alfred Marshall"
+          },
+          {
+            "question": "Apa yang dimaksud dengan 'Bubble Ekonomi' yang terjadi di Jepang pada akhir 1980-an?",
+            "options": ["Peningkatan harga saham secara tiba-tiba karena optimisme pasar", "Krisis utang negara yang menyebabkan inflasi tinggi", "Kenaikan harga properti yang didorong oleh permintaan yang tidak realistis", "Peningkatan besar dalam konsumsi barang mewah"],
+            "correct": "Kenaikan harga properti yang didorong oleh permintaan yang tidak realistis"
+          },
+          {
+            "question": "Salah satu perusahaan terbesar yang mengalami kebangkrutan pada tahun 2001, yang mengubah pandangan terhadap laporan keuangan dan audit, adalah?",
+            "options": ["General Motors", "Lehman Brothers", "Enron", "WorldCom"],
+            "correct": "Enron"
+          },
+          {
+            "question": "Siapa yang mengembangkan teori 'Laba Ekonomi' dalam konteks pasar persaingan sempurna?",
+            "options": ["Arthur Pigou", "Alfred Marshall", "David Ricardo", "Jean-Baptiste Say"],
+            "correct": "Alfred Marshall"
+          },
+          {
+            "question": "Pada tahun 1990-an, perusahaan teknologi apa yang pertama kali menggunakan IPO (Initial Public Offering) untuk memperkenalkan model bisnis berbasis internet?",
+            "options": ["Microsoft", "Amazon", "Netscape", "Google"],
+            "correct": "Netscape"
           }
         ]
       }
