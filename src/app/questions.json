@@ -102,6 +102,11 @@
             "question": "Tujuh tahun lalu, usia Ayah 4 kali usia anaknya.\nSekarang, usia Ayah dua kali usia anaknya.\nBerapa usia Ayah saat ini?",
             "options": ["28", "30", "32", "35"],
             "correct": "30"
+          },
+          {
+            "question": "Sebuah perusahaan memiliki 100 karyawan. Saat ini, 99% dari mereka telah menyelesaikan pelatihan sertifikasi khusus. Manajemen ingin menurunkan persentase ini menjadi 98% dengan mengurangi jumlah karyawan yang telah bersertifikasi. Berapa banyak karyawan bersertifikasi yang harus dikeluarkan dari perusahaan agar persentase turun menjadi 98%?",
+            "type": "input",
+            "correct": "50"
           }
         ]
       },

@@ -5,8 +5,9 @@ import questionsData from "./questions.json";
 
 type Question = {
   question: string;
-  options: string[];
+  options?: string[];
   correct: string;
+  type?: string;
 };
 
 type Category = {
@@ -35,6 +36,7 @@ const TicTacToeQuiz: React.FC = () => {
     O: 0,
     X: 0,
   });
+  const [userAnswer, setUserAnswer] = useState<string>("");
   const [isAnswering, setIsAnswering] = useState<boolean>(false);
   const [isCheckAnswer, setIsCheckAnswer] = useState<boolean>(false);
 
@@ -122,12 +124,18 @@ const TicTacToeQuiz: React.FC = () => {
     setIsAnswering(true);
   };
 
-  const handleAnswer = (answer: string) => {
+  const handleAnswer = (answer?: string) => {
     if (!selectedQuestion || selectedIndex === null) return;
 
     setIsCheckAnswer(true);
 
-    if (answer === selectedQuestion.correct) {
+    const isCorrect =
+      selectedQuestion.type === "input"
+        ? userAnswer.trim().toLowerCase() ===
+          selectedQuestion.correct.toLowerCase()
+        : answer === selectedQuestion.correct;
+
+    if (isCorrect) {
       const newBoard = [...board];
       newBoard[selectedIndex] = currentPlayer;
       setBoard(newBoard);
@@ -144,10 +152,10 @@ const TicTacToeQuiz: React.FC = () => {
     setTimeout(() => {
       setIsCheckAnswer(false);
       setIsAnswering(false);
+      setUserAnswer(""); // Reset input setelah menjawab
       resetTurn();
     }, 1000);
   };
-
   const [winnerMessage, setWinnerMessage] = useState<string | null>(null);
 
   const handleWin = (winner: "O" | "X") => {
@@ -224,19 +232,37 @@ const TicTacToeQuiz: React.FC = () => {
           <p className="whitespace-pre-wrap mt-2">
             {selectedQuestion.question}
           </p>
-          <div className="grid grid-cols-2 gap-2 mt-3">
-            {selectedQuestion.options.map((option) => (
+          {selectedQuestion.type === "multiple-choice" ? (
+            <div className="mt-3">
+              <input
+                type="text"
+                value={userAnswer}
+                onChange={(e) => setUserAnswer(e.target.value)}
+                className="p-2 border rounded w-full text-black"
+                placeholder="Ketik jawaban Anda..."
+              />
               <button
-                key={option}
-                className="p-2 rounded-lg transition-all duration-300
-            bg-blue-500 text-white hover:bg-blue-600"
-                onClick={() => handleAnswer(option)}
-                disabled={isCheckAnswer}
+                onClick={() => handleAnswer()}
+                className="mt-2 p-2 bg-green-500 text-white rounded-lg"
+                disabled={isCheckAnswer || userAnswer.trim() === ""}
               >
-                {option}
+                Submit Answer
               </button>
-            ))}
-          </div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 gap-2 mt-3">
+              {selectedQuestion.options?.map((option) => (
+                <button
+                  key={option}
+                  className="p-2 rounded-lg transition-all duration-300 bg-blue-500 text-white hover:bg-blue-600"
+                  onClick={() => handleAnswer(option)}
+                  disabled={isCheckAnswer}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          )}
           <div
             className={`mt-3 text-lg font-bold ${
               darkMode ? "text-red-400" : "text-red-700"
