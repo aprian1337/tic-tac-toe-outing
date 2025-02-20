@@ -42,6 +42,7 @@ const TicTacToeQuiz: React.FC = () => {
   const [isCheckAnswer, setIsCheckAnswer] = useState<boolean>(false);
 
   const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -134,18 +135,23 @@ const TicTacToeQuiz: React.FC = () => {
     const categoryName = cellCategories[index];
     const category = categories.find((cat) => cat.name === categoryName);
     if (!category) return;
-
-    const availableQuestions = category.questions;
-    const randomQuestion =
-      availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
-
+  
+    const availableQuestions = category.questions.filter(q => !usedQuestions.has(q.question));
+    
+    if (availableQuestions.length === 0) {
+      setFeedback("⚠️ No more questions in this category!");
+      return;
+    }
+  
+    const randomQuestion = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+  
     let shuffledOptions = randomQuestion.options;
     if (randomQuestion.options) {
-      shuffledOptions = [...randomQuestion.options].sort(
-        () => Math.random() - 0.5
-      );
+      shuffledOptions = [...randomQuestion.options].sort(() => Math.random() - 0.5);
     }
-
+  
+    setUsedQuestions(prev => new Set(prev).add(randomQuestion.question));
+  
     setSelectedQuestion({
       ...randomQuestion,
       options: shuffledOptions,
